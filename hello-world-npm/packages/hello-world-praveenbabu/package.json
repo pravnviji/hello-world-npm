@@ -1,0 +1,28 @@
+{
+  "name": "hello-world-praveenbabu",
+  "version": "2.0.5",
+  "description": "Simple CLI that says hello",
+  "main": "index.js",
+  "bin": {
+    "hello-world": "./index.js",
+    "parser": "./parser.cjs"
+  },
+  "scripts":{
+    "parser": "node parser.cjs"
+  },
+  "type": "module",
+  "keywords": [
+    "hello",
+    "world",
+    "npm",
+    "example",
+    "cli"
+  ],
+  "author": "Praveenbabu",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^13.1.0",
+    "update-notifier": "^6.0.2",
+    "xml2js": "^0.6.2"
+  }
+}

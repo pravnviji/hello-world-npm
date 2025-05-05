@@ -1,0 +1,923 @@
+<Grid ParamP="MediaType=1|MasterClient=104|RepYear=292|Country=67" id="dynscr_mReviewSpotsSummary_5aa90_96050" Name="mReviewSpotsSummary" Options="%Vertical=(IsExcluded, IsException, TVType, Market, Demo, DataSource, Channel)|%Horizontal={}|%Totals={}|%Data=(GRP, GRP_Eq, Num_Spots, Num_Spots_Eq, Num_Spots_Eq_COVID)|%S_Row={}|%S_Col={}|%TotBegin=()|%Ranked=()|%At=(MediaType=1, MasterClient=104, RepYear=292, Country=67)|%DataDisp=(GRP, GRP_Eq, Num_Spots, Num_Spots_Eq, Num_Spots_Eq_COVID)" CanEdit="No" FunctionGroup="(40, 1000, 1100, 1200, 1300)" DataAccess="MediaType=1" Comments="TV World Markets.Processing.Review Spots Summary" CommandOrg="Pivot((Num_Spots:{Hidden,Name Num_Spots}, Num_Spots_Eq:{Hidden,Name Num_Spots_Eq}, Num_Spots_Eq_COVID:{Hidden,Name Num_Spots_Eq_COVID}, BImpacts:{Hidden,Name BImpacts}, BImpacts_Eq:{Hidden,Name BImpacts_Eq}, Impacts:{Hidden,Name Impacts}, Impacts_AP:{Hidden,Name Impacts_AP}, Impacts_Eq:{Hidden,Name Impacts_Eq}, Impacts_Eq_AP:{Hidden,Name Impacts_Eq_AP}, BGRP:{Hidden,Name BGRP}, GRP:Name GRP, GRP_COVID:{Hidden,Name GRP_COVID}, GRP_Market:{Hidden,Name GRP_Market}, GRP_AP:{Hidden,Name GRP_AP}, BGRP_Eq:{Hidden,Name BGRP_Eq}, GRP_Eq:Name GRP_Eq, GRP_Eq_COVID:{Hidden,Name GRP_Eq_COVID}, GRP_Eq_Market:{Hidden,Name GRP_Eq_Market}, GRP_Eq_AP:{Hidden,Name GRP_Eq_AP}, Dur10:{Hidden,Name Dur10}, Dur30:{Hidden,Name Dur30}, TVUnits:{Hidden,Name TVUnits}, TVUnits_Eq:{Hidden,Name TVUnits_Eq}, TVUnits_Eq_COVID:{Hidden,Name TVUnits_Eq_COVID}, SpecAdjFacTV:{Hidden,Name SpecAdjFacTV}, SpecialPremium:{Hidden,Name SpecialPremium}, Spend_Ttl:{Hidden,Name Spend_Ttl}, Spend_Exclusion:{Hidden,Name Spend_Exclusion}, Spend_Exception:{Hidden,Name Spend_Exception}, Spend_Net_Net:{Hidden,Name Spend_Net_Net}, Spend_Measured:{Hidden,Name Spend_Measured}, Spend_Pl_Exception:{Hidden,Name Spend_Pl_Exception}, Spend_Pl_Exclusion:{Hidden,Name Spend_Pl_Exclusion}, Spend_Pl_Net_Net:{Hidden,Name Spend_Pl_Net_Net}, Spend_Pl_Measured:{Hidden,Name Spend_Pl_Measured}, Spend_Pl_Ttl:{Hidden,Name Spend_Pl_Ttl}, Spend_SpecialPremium:{Hidden,Name Spend_SpecialPremium}, Spend_Target:{Hidden,Name Spend_Target}, Spend_Target_QualAdj:{Hidden,Name Spend_Target_QualAdj}, Spend_Target_CIAdj:{Hidden,Name Spend_Target_CIAdj}, Spend_Target_MIAdj:{Hidden,Name Spend_Target_MIAdj}, Spend_Target_Unadj:{Hidden,Name Spend_Target_Unadj}, Spend_Target_VolAdj:{Hidden,Name Spend_Target_VolAdj}, Spend_Target_VolCIAdj:{Hidden,Name Spend_Target_VolCIAdj}, Spend_Target_VolMIAdj:{Hidden,Name Spend_Target_VolMIAdj}, Spend_Target_COVID:{Hidden,Name Spend_Target_COVID}, Spend_Target_QualAdj_COVID:{Hidden,Name Spend_Target_QualAdj_COVID}, Spend_Target_CIAdj_COVID:{Hidden,Name Spend_Target_CIAdj_COVID}, Spend_Target_MIAdj_COVID:{Hidden,Name Spend_Target_MIAdj_COVID}, Spend_Target_Unadj_COVID:{Hidden,Name Spend_Target_Unadj_COVID}, Spend_Target_VolAdj_COVID:{Hidden,Name Spend_Target_VolAdj_COVID}, Spend_Target_VolCIAdj_COVID:{Hidden,Name Spend_Target_VolCIAdj_COVID}, Spend_Target_VolMIAdj_COVID:{Hidden,Name Spend_Target_VolMIAdj_COVID}, Spend_Ratecard:{Hidden,Name Spend_Ratecard}, (Spend_Net_Net/TVUnits_Eq):{Caption &quot;Actual CPU&quot;,Format &quot;0,000.00&quot;,Hidden,Name MULTI_Spend_Net_Net_2}, (Spend_Target_Unadj/TVUnits_Eq):{Caption &quot;Commit. CPU&quot;,Format &quot;0,000.00&quot;,Hidden,Name MULTI_Spend_Target_Unadj_2}) @(MediaType=1, MasterClient=?(Mandatory), RepYear=?, Month=?, Country=?, TVType=?(LOV (ListTable((TVType) @(MasterClient=?, Country=?) by(CommitmentLineId) options(distinct)))), Market=?(LOV (ListTable((Market) @(MediaType=1, MasterClient=?, Country=?, TVType=?) by(CommitmentLineId) options(distinct)))), Demo=?(LOV (ListTable((Demo) @(MasterClient=?, Country=?, TVType=?, Market=?) by(CommitmentLineId) options(distinct)))), Channel=?(LOV (ListTable((Channel) @(MediaType=1, MasterClient=?, Country=?, TVType=?, Market=?, Demo=?) by(CommitmentLineId) options(distinct)))), BusinessUnit=?, Brand=?, SpecialAdj=?(Caption &quot;Special Adjustment&quot;), IsExcluded=?(Caption &quot;Spots Excluded ?&quot;), IsException=?, IsSpecial=?, IsForecast=?, IsCentreBreak=?, ProgramName=?{Wildcards,Hint &quot;Part of name ok&quot;}, IsTopProgram=?, IsDblSpot=?, HalfHour=?, IsOutsideObjective=?, ObjectiveName=?{Wildcards,Hint &quot;Part of name ok&quot;}, Objective.IsExcluded=?{Caption &quot;Objective Excluded ?&quot;,Name exc11}, ObjectiveId=%ObjectiveId, IsSpend=?) options(NonBlankData) by(DataSource, MasterClient, Country, BusinessUnit, SectionGroup, IsExcluded, ExclusionReason, IsException, IsSpecial, IsForecast, IsSpend, MediaSubtype, Source_Brand_Name, Brand, Source_TVType_Name, TVType, Source_Market_Name, Market, Source_Demo_Name, Demo, Source_ChannelGroup_Name, Source_Channel_Name, Channel, PackageType, Package_Code, Package_Name, Deal_Name, RepYear, Year, Month, Quarter, MonthNo, Week, Date, DayGroup, Day, PeakOverride, HalfHour, Source_Daypart_Name, Daypart, IsPeak, Spot_Number, Tot_Spots, Source_PIBCat_Name, PIBCat, IsPremiumPIB, IsCentreBreak, Campaign, Campaign_Short_Name, ProgramName, Duration, SpecialAdj, TVTier, BlockID, IsDblSpot, NDblSpots, IsDoubleSpotStrategy, IsTopProgram, Objective.ObjectiveName, Objective.IsExcluded:Caption &quot;Objective Excluded&quot;, ObjectiveMarket:Caption &quot;Objective Market&quot;, TVSpot.ObjectiveName:{Caption &quot;Spot Objective&quot;,Name objec1}, TVSpot.Burst_Id:Caption &quot;Spot Burst Id&quot;, CommitmentLineId:Caption &quot;Commitment Line #&quot;, TVSpotId:{Caption &quot;Spot #&quot;,Visible True}, Vehicle, AdjustmentFactor1, AdjustmentFactor2, AdjustmentFactor3, AdjustmentFactor4, AdjustmentFactor5), (Vertical=%Vertical:{Default (IsExcluded, IsException, TVType, Market, Demo, Channel),Location &quot;next/?&quot;}, Horizontal=%Horizontal:Location &quot;next/?&quot;, Totals=%Totals:Location &quot;next/?&quot;, Data=%Data:{Default (GRP, GRP_Eq),Location &quot;next/?&quot;}, S_Row=%S_Row:Location &quot;next/?&quot;, S_Col=%S_Col:Location &quot;next/?&quot;))" Command="Pivot((Num_Spots:{Hidden,Name Num_Spots}, Num_Spots_Eq:{Hidden,Name Num_Spots_Eq}, Num_Spots_Eq_COVID:{Hidden,Name Num_Spots_Eq_COVID}, BImpacts:{Hidden,Name BImpacts}, BImpacts_Eq:{Hidden,Name BImpacts_Eq}, Impacts:{Hidden,Name Impacts}, Impacts_AP:{Hidden,Name Impacts_AP}, Impacts_Eq:{Hidden,Name Impacts_Eq}, Impacts_Eq_AP:{Hidden,Name Impacts_Eq_AP}, BGRP:{Hidden,Name BGRP}, GRP:Name GRP, GRP_COVID:{Hidden,Name GRP_COVID}, GRP_Market:{Hidden,Name GRP_Market}, GRP_AP:{Hidden,Name GRP_AP}, BGRP_Eq:{Hidden,Name BGRP_Eq}, GRP_Eq:Name GRP_Eq, GRP_Eq_COVID:{Hidden,Name GRP_Eq_COVID}, GRP_Eq_Market:{Hidden,Name GRP_Eq_Market}, GRP_Eq_AP:{Hidden,Name GRP_Eq_AP}, Dur10:{Hidden,Name Dur10}, Dur30:{Hidden,Name Dur30}, TVUnits:{Hidden,Name TVUnits}, TVUnits_Eq:{Hidden,Name TVUnits_Eq}, TVUnits_Eq_COVID:{Hidden,Name TVUnits_Eq_COVID}, SpecAdjFacTV:{Hidden,Name SpecAdjFacTV}, SpecialPremium:{Hidden,Name SpecialPremium}, Spend_Ttl:{Hidden,Name Spend_Ttl}, Spend_Exclusion:{Hidden,Name Spend_Exclusion}, Spend_Exception:{Hidden,Name Spend_Exception}, Spend_Net_Net:{Hidden,Name Spend_Net_Net}, Spend_Measured:{Hidden,Name Spend_Measured}, Spend_Pl_Exception:{Hidden,Name Spend_Pl_Exception}, Spend_Pl_Exclusion:{Hidden,Name Spend_Pl_Exclusion}, Spend_Pl_Net_Net:{Hidden,Name Spend_Pl_Net_Net}, Spend_Pl_Measured:{Hidden,Name Spend_Pl_Measured}, Spend_Pl_Ttl:{Hidden,Name Spend_Pl_Ttl}, Spend_SpecialPremium:{Hidden,Name Spend_SpecialPremium}, Spend_Target:{Hidden,Name Spend_Target}, Spend_Target_QualAdj:{Hidden,Name Spend_Target_QualAdj}, Spend_Target_CIAdj:{Hidden,Name Spend_Target_CIAdj}, Spend_Target_MIAdj:{Hidden,Name Spend_Target_MIAdj}, Spend_Target_Unadj:{Hidden,Name Spend_Target_Unadj}, Spend_Target_VolAdj:{Hidden,Name Spend_Target_VolAdj}, Spend_Target_VolCIAdj:{Hidden,Name Spend_Target_VolCIAdj}, Spend_Target_VolMIAdj:{Hidden,Name Spend_Target_VolMIAdj}, Spend_Target_COVID:{Hidden,Name Spend_Target_COVID}, Spend_Target_QualAdj_COVID:{Hidden,Name Spend_Target_QualAdj_COVID}, Spend_Target_CIAdj_COVID:{Hidden,Name Spend_Target_CIAdj_COVID}, Spend_Target_MIAdj_COVID:{Hidden,Name Spend_Target_MIAdj_COVID}, Spend_Target_Unadj_COVID:{Hidden,Name Spend_Target_Unadj_COVID}, Spend_Target_VolAdj_COVID:{Hidden,Name Spend_Target_VolAdj_COVID}, Spend_Target_VolCIAdj_COVID:{Hidden,Name Spend_Target_VolCIAdj_COVID}, Spend_Target_VolMIAdj_COVID:{Hidden,Name Spend_Target_VolMIAdj_COVID}, Spend_Ratecard:{Hidden,Name Spend_Ratecard}, (Spend_Net_Net/TVUnits_Eq):{Caption &quot;Actual CPU&quot;,Format &quot;0,000.00&quot;,Hidden,Name MULTI_Spend_Net_Net_2}, (Spend_Target_Unadj/TVUnits_Eq):{Caption &quot;Commit. CPU&quot;,Format &quot;0,000.00&quot;,Hidden,Name MULTI_Spend_Target_Unadj_2}) @(MediaType=1, MasterClient=%MasterClient, RepYear=%RepYear, Month=%Month, Country=%Country, TVType=%TVType, Market=%Market, Demo=%Demo, Channel=%Channel, BusinessUnit=%BusinessUnit, Brand=%Brand, SpecialAdj=%SpecialAdj:Caption &quot;Special Adjustment&quot;, IsExcluded=%IsExcluded:Caption &quot;Spots Excluded ?&quot;, IsException=%IsException, IsSpecial=%IsSpecial, IsForecast=%IsForecast, IsCentreBreak=%IsCentreBreak, ProgramName=%ProgramName:{Wildcards,Hint &quot;Part of name ok&quot;}, IsTopProgram=%IsTopProgram, IsDblSpot=%IsDblSpot, HalfHour=%HalfHour, IsOutsideObjective=%IsOutsideObjective, ObjectiveName=%ObjectiveName:{Wildcards,Hint &quot;Part of name ok&quot;}, Objective.IsExcluded=%exc11:{Caption &quot;Objective Excluded ?&quot;,Name exc11}, ObjectiveId=%ObjectiveId, IsSpend=%IsSpend) options(NonBlankData) by(DataSource, MasterClient, Country, BusinessUnit, SectionGroup, IsExcluded, ExclusionReason, IsException, IsSpecial, IsForecast, IsSpend, MediaSubtype, Source_Brand_Name, Brand, Source_TVType_Name, TVType, Source_Market_Name, Market, Source_Demo_Name, Demo, Source_ChannelGroup_Name, Source_Channel_Name, Channel, PackageType, Package_Code, Package_Name, Deal_Name, RepYear, Year, Month, Quarter, MonthNo, Week, Date, DayGroup, Day, PeakOverride, HalfHour, Source_Daypart_Name, Daypart, IsPeak, Spot_Number, Tot_Spots, Source_PIBCat_Name, PIBCat, IsPremiumPIB, IsCentreBreak, Campaign, Campaign_Short_Name, ProgramName, Duration, SpecialAdj, TVTier, BlockID, IsDblSpot, NDblSpots, IsDoubleSpotStrategy, IsTopProgram, Objective.ObjectiveName, Objective.IsExcluded:Caption &quot;Objective Excluded&quot;, ObjectiveMarket:Caption &quot;Objective Market&quot;, TVSpot.ObjectiveName:{Caption &quot;Spot Objective&quot;,Name objec1}, TVSpot.Burst_Id:Caption &quot;Spot Burst Id&quot;, CommitmentLineId:Caption &quot;Commitment Line #&quot;, TVSpotId:{Caption &quot;Spot #&quot;,Visible True}, Vehicle, AdjustmentFactor1, AdjustmentFactor2, AdjustmentFactor3, AdjustmentFactor4, AdjustmentFactor5), (Vertical=(IsExcluded:Location &quot;next/?&quot;, IsException:Location &quot;next/?&quot;, TVType:Location &quot;next/?&quot;, Market:Location &quot;next/?&quot;, Demo:Location &quot;next/?&quot;, DataSource:Location &quot;next/?&quot;, Channel:Location &quot;next/?&quot;), Horizontal={}, Totals={}, Data=(GRP:Location &quot;next/?&quot;, GRP_Eq:Location &quot;next/?&quot;, Num_Spots:Location &quot;next/?&quot;, Num_Spots_Eq:Location &quot;next/?&quot;, Num_Spots_Eq_COVID:Location &quot;next/?&quot;), S_Row={}, S_Col={}))" Param="{MasterClient=104, RepYear=292, Country=67}" Namespace="" EOJ="1" JobId="33">
+	<Columns Leaves="1">
+		<Column Name="IsExcluded" Caption="Excluded?" Hint="Is record considered Exclusion by GATE?" IsHeader="1" />
+		<Column Name="IsException" Caption="Exception?" Hint="Is record considered Exception by GATE?" IsHeader="1" />
+		<Column Name="TVType" Caption="TV Type" Hint="Lookup field - DO NOT USE. Being superseeded by generic MediaSubtype" IsHeader="1" />
+		<Column Name="Market" Caption="Market" Hint="Lookup field for Market." IsHeader="1" />
+		<Column Name="Demo" Caption="Demo" Hint="Lookup field for Demographic." IsHeader="1" />
+		<Column Name="DataSource" Caption="Data Source" IsHeader="1" />
+		<Column Name="Channel" Caption="Channel" Hint="Lookup field for Channel Name." IsHeader="1" />
+		<Column Name="GRP" Caption="Act. GRPs" Visible="true" Hint="Act. GRPs." />
+		<Column Name="GRP_Eq" Caption="Eqv. GRPs" Visible="true" Hint="Eqv. GRPs." />
+		<Column Name="Num_Spots" Caption="No. Spots" Visible="true" Hint="Number of Spots." />
+		<Column Name="Num_Spots_Eq" Caption="No. Eqv. Spots" Visible="true" Hint="Eqv. Spots." />
+		<Column Name="Num_Spots_Eq_COVID" Caption="No. Eqv. Spots Excl. COVID" Visible="true" Hint="Estimated Eqv. Spots without effect of COVID." />
+	</Columns>
+	<Rows Name="IsExcluded" Leaves="1" Position="0">
+		<Row Value="False" Caption="Not Excluded">
+			<Rows Name="IsException">
+				<Row Value="False" Caption="Not Exception">
+					<Rows Name="TVType">
+						<Row Value="4" Caption="Regional">
+							<Rows Name="Market">
+								<Row Value="21" Caption="DCH">
+									<Rows Name="Demo">
+										<Row Value="4461" Caption="HHF20-59">
+											<Rows Name="DataSource">
+												<Row Value="69" Caption="Switzerland">
+													<Rows Name="Channel">
+														<Row Value="4826" Caption="3+">
+															<Field Column="GRP" editType="Number" Format="0,000.00" Enabled="No" Size="10" Value="22.749546561234002" />
+															<Field Column="GRP_Eq" editType="Number" Format="0,000.00" Enabled="No" Size="10" Value="18.313384981793373" />
+															<Field Column="Num_Spots" editType="Integer" Format="0,000." Enabled="No" Size="10" Value="199" />
+														</Row>
+														<Row Value="12949" Caption="4+">
+															<Field Column="GRP" editType="Number" Format="0,000.00" Enabled="No" Size="10" Value="30.468012245647028" />
+															<Field Column="GRP_Eq" editType="Number" Format="0,000.00" Enabled="No" Size="10" Value="24.526749857745823" />
+															<Field Column="Num_Spots" editType="Integer" Format="0,000." Enabled="No" Size="10" Value="283" />
+														</Row>
+														<Row Value="13089" Caption="5+">
+															<Field Column="GRP" editType="Number" Format="0,000.00" Enabled="No" Size="10" Value="10.426758489590002" />
+															<Field Column="GRP_Eq" editType="Number" Format="0,000.00" Enabled="No" Size="10" Value="8.393540584119945" />
+															<Field Column="Num_Spots" editType="Integer" Format="0,000." Enabled="No" Size="10" Value="207" />
+														</Row>
+														<Row Value="13951" Caption="RTL CH">
+															<Field Column="GRP" editType="Number" Format="0,000.00" Enabled="No" Size="10" Value="59.963176936807" />
+															<Field Column="GRP_Eq" editType="Number" Format="0,000.00" Enabled="No" Size="10" Value="48.27035743412963" />
+															<Field Column="Num_Spots" editType="Integer" Format="0,000." Enabled="No" Size="10" Value="365" />
+														</Row>
+														<Row Value="13952" Caption="RTL2 CH">
+															<Field Column="GRP" editType="Number" Format="0,000.00" Enabled="No" Size="10" Value="30.241448422918985" />
+															<Field Column="GRP_Eq" editType="Number" Format="0,000.00" Enabled="No" Size="10" Value="24.344365980449787" />
+															<Field Column="Num_Spots" editType="Integer" Format="0,000." Enabled="No" Size="10" Value="360" />
+														</Row>
+														<Row Value="13953" Caption="SAT.1 CH">
+															<Field Column="GRP" editType="Number" Format="0,000.00" Enabled="No" Size="10" Value="49.33070024836898" />
+															<Field Column="GRP_Eq" editType="Number" Format="0,000.00" Enabled="No" Size="10" Value="39.711213699937005" />
+															<Field Column="Num_Spots" editType="Integer" Format="0,000." Enabled="No" Size="10" Value="366" />
+														</Row>
+														<Row Value="13956" Caption="TLC CH">
+															<Field Column="GRP" editType="Number" Format="0,000.00" Enabled="No" Size="10" Value="22.169617404096986" />
+															<Field Column="GRP_Eq" editType="Number" Format="0,000.00" Enabled="No" Size="10" Value="17.846542010298073" />
+															<Field Column="Num_Spots" editType="Integer" Format="0,000." Enabled="No" Size="10" Value="413" />
+														</Row>
+														<Row Value="1833" Caption="TV25">
+															<Field Column="GRP" editType="Number" Format="0,000.00" Enabled="No" Size="10" Value="17.240816573435005" />
+															<Field Column="GRP_Eq" editType="Number" Format="0,000.00" Enabled="No" Size="10" Value="13.878857341615168" />
+															<Field Column="Num_Spots" editType="Integer" Format="0,000." Enabled="No" Size="10" Value="316" />
+														</Row>
+														<Row Value="13957" Caption="VOX CH">
+															<Field Column="GRP" editType="Number" Format="0,000.00" Enabled="No" Size="10" Value="53.651298702073" />
+															<Field Column="GRP_Eq" editType="Number" Format="0,000.00" Enabled="No" Size="10" Value="43.189295455168725" />
+															<Field Column="Num_Spots" editType="Integer" Format="0,000." Enabled="No" Size="10" Value="433" />
+														</Row>
+													</Rows>
+												</Row>
+											</Rows>
+										</Row>
+									</Rows>
+								</Row>
+								<Row Value="22" Caption="FCH">
+									<Rows Name="Demo">
+										<Row Value="4461" Caption="HHF20-59">
+											<Rows Name="DataSource">
+												<Row Value="69" Caption="Switzerland">
+													<Rows Name="Channel">
+														<Row Value="13941" Caption="AB3 CH">
+															<Field Column="GRP" editType="Number" Format="0,000.00" Enabled="No" Size="10" Value="12.673094003277004" />
+															<Field Column="GRP_Eq" editType="Number" Format="0,000.00" Enabled="No" Size="10" Value="10.201840672637985" />
+															<Field Column="Num_Spots" editType="Integer" Format="0,000." Enabled="No" Size="10" Value="109" />
+														</Row>
+													</Rows>
+												</Row>
+											</Rows>
+										</Row>
+									</Rows>
+								</Row>
+							</Rows>
+						</Row>
+					</Rows>
+				</Row>
+				<Row Value="True" Caption="Exception">
+					<Rows Name="TVType">
+						<Row Value="4" Caption="Regional">
+							<Rows Name="Market">
+								<Row Value="21" Caption="DCH">
+									<Rows Name="Demo">
+										<Row Value="4461" Caption="HHF20-59">
+											<Rows Name="DataSource">
+												<Row Value="69" Caption="Switzerland">
+													<Rows Name="Channel">
+														<Row Value="-1" Caption="Other-Unmapped">
+															<Field Column="GRP" editType="Number" Format="0,000.00" Enabled="No" Size="10" Value="67.29331729616996" />
+															<Field Column="GRP_Eq" editType="Number" Format="0,000.00" Enabled="No" Size="10" Value="54.17112042341681" />
+															<Field Column="Num_Spots" editType="Integer" Format="0,000." Enabled="No" Size="10" Value="738" />
+														</Row>
+													</Rows>
+												</Row>
+											</Rows>
+										</Row>
+									</Rows>
+								</Row>
+								<Row Value="22" Caption="FCH">
+									<Rows Name="Demo">
+										<Row Value="4461" Caption="HHF20-59">
+											<Rows Name="DataSource">
+												<Row Value="69" Caption="Switzerland">
+													<Rows Name="Channel">
+														<Row Value="-1" Caption="Other-Unmapped">
+															<Field Column="GRP" editType="Number" Format="0,000.00" Enabled="No" Size="10" Value="157.58399922886395" />
+															<Field Column="GRP_Eq" editType="Number" Format="0,000.00" Enabled="No" Size="10" Value="120.81439940879571" />
+															<Field Column="Num_Spots" editType="Integer" Format="0,000." Enabled="No" Size="10" Value="119" />
+														</Row>
+														<Row Value="13952" Caption="RTL2 CH">
+															<Field Column="GRP" editType="Number" Format="0,000.00" Enabled="No" Size="10" Value="16.9092684603" />
+															<Field Column="GRP_Eq" editType="Number" Format="0,000.00" Enabled="No" Size="10" Value="12.963772486229997" />
+															<Field Column="Num_Spots" editType="Integer" Format="0,000." Enabled="No" Size="10" Value="31" />
+														</Row>
+														<Row Value="13944" Caption="RTL9 CH">
+															<Field Column="GRP" editType="Number" Format="0,000.00" Enabled="No" Size="10" Value="24.373649504761993" />
+															<Field Column="GRP_Eq" editType="Number" Format="0,000.00" Enabled="No" Size="10" Value="19.62078785133341" />
+															<Field Column="Num_Spots" editType="Integer" Format="0,000." Enabled="No" Size="10" Value="176" />
+														</Row>
+													</Rows>
+												</Row>
+											</Rows>
+										</Row>
+									</Rows>
+								</Row>
+							</Rows>
+						</Row>
+					</Rows>
+				</Row>
+			</Rows>
+		</Row>
+	</Rows>
+	<Menu Command=":dropform:" Caption="Breakdowns">
+		<Grid CanSelect="No" IsMeta="Yes">
+			<Columns>
+				<Column Name="Field" Caption="Field" Width="160" />
+				<Column Name="%Vertical" Caption="Vertical" Width="70" />
+				<Column Name="%Horizontal" Caption="Horizontal" Width="70" />
+				<Column Name="%Exclude" Caption="Exclude" Width="60" />
+				<Column Name="%Totals" Caption="Totals" />
+			</Columns>
+			<Rows Name="Field">
+				<Row Value="&quot;IsExcluded&quot;" Caption="Excluded?">
+					<Field Expression="IsExcluded:Name IsExcluded" Value="1" editType="radio" Name="IsExcluded_A" Column="%Vertical" />
+					<Field Expression="IsExcluded:Name IsExcluded" Value="0" editType="radio" Name="IsExcluded_A" Column="%Horizontal" />
+					<Field Expression="IsExcluded:Name IsExcluded" Value="0" editType="radio" Name="IsExcluded_A" Column="%Exclude" />
+					<Field Expression="IsExcluded:Name IsExcluded" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;IsException&quot;" Caption="Exception?">
+					<Field Expression="IsException:Name IsException" Value="1" editType="radio" Name="IsException_A" Column="%Vertical" />
+					<Field Expression="IsException:Name IsException" Value="0" editType="radio" Name="IsException_A" Column="%Horizontal" />
+					<Field Expression="IsException:Name IsException" Value="0" editType="radio" Name="IsException_A" Column="%Exclude" />
+					<Field Expression="IsException:Name IsException" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;TVType&quot;" Caption="TV Type">
+					<Field Expression="TVType:Name TVType" Value="1" editType="radio" Name="TVType_A" Column="%Vertical" />
+					<Field Expression="TVType:Name TVType" Value="0" editType="radio" Name="TVType_A" Column="%Horizontal" />
+					<Field Expression="TVType:Name TVType" Value="0" editType="radio" Name="TVType_A" Column="%Exclude" />
+					<Field Expression="TVType:Name TVType" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;Market&quot;" Caption="Market">
+					<Field Expression="Market:Name Market" Value="1" editType="radio" Name="Market_A" Column="%Vertical" />
+					<Field Expression="Market:Name Market" Value="0" editType="radio" Name="Market_A" Column="%Horizontal" />
+					<Field Expression="Market:Name Market" Value="0" editType="radio" Name="Market_A" Column="%Exclude" />
+					<Field Expression="Market:Name Market" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;Demo&quot;" Caption="Demo">
+					<Field Expression="Demo:Name Demo" Value="1" editType="radio" Name="Demo_A" Column="%Vertical" />
+					<Field Expression="Demo:Name Demo" Value="0" editType="radio" Name="Demo_A" Column="%Horizontal" />
+					<Field Expression="Demo:Name Demo" Value="0" editType="radio" Name="Demo_A" Column="%Exclude" />
+					<Field Expression="Demo:Name Demo" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;DataSource&quot;" Caption="Data Source">
+					<Field Expression="DataSource:Name DataSource" Value="1" editType="radio" Name="DataSource_A" Column="%Vertical" />
+					<Field Expression="DataSource:Name DataSource" Value="0" editType="radio" Name="DataSource_A" Column="%Horizontal" />
+					<Field Expression="DataSource:Name DataSource" Value="0" editType="radio" Name="DataSource_A" Column="%Exclude" />
+					<Field Expression="DataSource:Name DataSource" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;Channel&quot;" Caption="Channel">
+					<Field Expression="Channel:Name Channel" Value="1" editType="radio" Name="Channel_A" Column="%Vertical" />
+					<Field Expression="Channel:Name Channel" Value="0" editType="radio" Name="Channel_A" Column="%Horizontal" />
+					<Field Expression="Channel:Name Channel" Value="0" editType="radio" Name="Channel_A" Column="%Exclude" />
+					<Field Expression="Channel:Name Channel" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;MasterClient&quot;" Caption="Master Client">
+					<Field Expression="MasterClient" Value="0" editType="radio" Name="MasterClient_A" Column="%Vertical" />
+					<Field Expression="MasterClient" Value="0" editType="radio" Name="MasterClient_A" Column="%Horizontal" />
+					<Field Expression="MasterClient" Value="1" editType="radio" Name="MasterClient_A" Column="%Exclude" />
+					<Field Expression="MasterClient" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;Country&quot;" Caption="Country">
+					<Field Expression="Country" Value="0" editType="radio" Name="Country_A" Column="%Vertical" />
+					<Field Expression="Country" Value="0" editType="radio" Name="Country_A" Column="%Horizontal" />
+					<Field Expression="Country" Value="1" editType="radio" Name="Country_A" Column="%Exclude" />
+					<Field Expression="Country" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;BusinessUnit&quot;" Caption="BU">
+					<Field Expression="BusinessUnit" Value="0" editType="radio" Name="BusinessUnit_A" Column="%Vertical" />
+					<Field Expression="BusinessUnit" Value="0" editType="radio" Name="BusinessUnit_A" Column="%Horizontal" />
+					<Field Expression="BusinessUnit" Value="1" editType="radio" Name="BusinessUnit_A" Column="%Exclude" />
+					<Field Expression="BusinessUnit" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;SectionGroup&quot;" Caption="Category">
+					<Field Expression="SectionGroup" Value="0" editType="radio" Name="SectionGroup_A" Column="%Vertical" />
+					<Field Expression="SectionGroup" Value="0" editType="radio" Name="SectionGroup_A" Column="%Horizontal" />
+					<Field Expression="SectionGroup" Value="1" editType="radio" Name="SectionGroup_A" Column="%Exclude" />
+					<Field Expression="SectionGroup" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;ExclusionReason&quot;" Caption="Exclusion Reason">
+					<Field Expression="ExclusionReason" Value="0" editType="radio" Name="ExclusionReason_A" Column="%Vertical" />
+					<Field Expression="ExclusionReason" Value="0" editType="radio" Name="ExclusionReason_A" Column="%Horizontal" />
+					<Field Expression="ExclusionReason" Value="1" editType="radio" Name="ExclusionReason_A" Column="%Exclude" />
+					<Field Expression="ExclusionReason" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;IsSpecial&quot;" Caption="Special?">
+					<Field Expression="IsSpecial" Value="0" editType="radio" Name="IsSpecial_A" Column="%Vertical" />
+					<Field Expression="IsSpecial" Value="0" editType="radio" Name="IsSpecial_A" Column="%Horizontal" />
+					<Field Expression="IsSpecial" Value="1" editType="radio" Name="IsSpecial_A" Column="%Exclude" />
+					<Field Expression="IsSpecial" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;IsForecast&quot;" Caption="Forecast?">
+					<Field Expression="IsForecast" Value="0" editType="radio" Name="IsForecast_A" Column="%Vertical" />
+					<Field Expression="IsForecast" Value="0" editType="radio" Name="IsForecast_A" Column="%Horizontal" />
+					<Field Expression="IsForecast" Value="1" editType="radio" Name="IsForecast_A" Column="%Exclude" />
+					<Field Expression="IsForecast" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;IsSpend&quot;" Caption="Spend Record?">
+					<Field Expression="IsSpend" Value="0" editType="radio" Name="IsSpend_A" Column="%Vertical" />
+					<Field Expression="IsSpend" Value="0" editType="radio" Name="IsSpend_A" Column="%Horizontal" />
+					<Field Expression="IsSpend" Value="1" editType="radio" Name="IsSpend_A" Column="%Exclude" />
+					<Field Expression="IsSpend" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;MediaSubtype&quot;" Caption="Media Subtype">
+					<Field Expression="MediaSubtype" Value="0" editType="radio" Name="MediaSubtype_A" Column="%Vertical" />
+					<Field Expression="MediaSubtype" Value="0" editType="radio" Name="MediaSubtype_A" Column="%Horizontal" />
+					<Field Expression="MediaSubtype" Value="1" editType="radio" Name="MediaSubtype_A" Column="%Exclude" />
+					<Field Expression="MediaSubtype" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;Source_Brand_Name&quot;" Caption="Source Brand Name">
+					<Field Expression="Source_Brand_Name" Value="0" editType="radio" Name="Source_Brand_Name_A" Column="%Vertical" />
+					<Field Expression="Source_Brand_Name" Value="0" editType="radio" Name="Source_Brand_Name_A" Column="%Horizontal" />
+					<Field Expression="Source_Brand_Name" Value="1" editType="radio" Name="Source_Brand_Name_A" Column="%Exclude" />
+					<Field Expression="Source_Brand_Name" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;Brand&quot;" Caption="Brand">
+					<Field Expression="Brand" Value="0" editType="radio" Name="Brand_A" Column="%Vertical" />
+					<Field Expression="Brand" Value="0" editType="radio" Name="Brand_A" Column="%Horizontal" />
+					<Field Expression="Brand" Value="1" editType="radio" Name="Brand_A" Column="%Exclude" />
+					<Field Expression="Brand" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;Source_TVType_Name&quot;" Caption="Source TV Type Name">
+					<Field Expression="Source_TVType_Name" Value="0" editType="radio" Name="Source_TVType_Name_A" Column="%Vertical" />
+					<Field Expression="Source_TVType_Name" Value="0" editType="radio" Name="Source_TVType_Name_A" Column="%Horizontal" />
+					<Field Expression="Source_TVType_Name" Value="1" editType="radio" Name="Source_TVType_Name_A" Column="%Exclude" />
+					<Field Expression="Source_TVType_Name" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;Source_Market_Name&quot;" Caption="Source Market Name">
+					<Field Expression="Source_Market_Name" Value="0" editType="radio" Name="Source_Market_Name_A" Column="%Vertical" />
+					<Field Expression="Source_Market_Name" Value="0" editType="radio" Name="Source_Market_Name_A" Column="%Horizontal" />
+					<Field Expression="Source_Market_Name" Value="1" editType="radio" Name="Source_Market_Name_A" Column="%Exclude" />
+					<Field Expression="Source_Market_Name" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;Source_Demo_Name&quot;" Caption="Source Demo Name">
+					<Field Expression="Source_Demo_Name" Value="0" editType="radio" Name="Source_Demo_Name_A" Column="%Vertical" />
+					<Field Expression="Source_Demo_Name" Value="0" editType="radio" Name="Source_Demo_Name_A" Column="%Horizontal" />
+					<Field Expression="Source_Demo_Name" Value="1" editType="radio" Name="Source_Demo_Name_A" Column="%Exclude" />
+					<Field Expression="Source_Demo_Name" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;Source_ChannelGroup_Name&quot;" Caption="Source Channel Group Name">
+					<Field Expression="Source_ChannelGroup_Name" Value="0" editType="radio" Name="Source_ChannelGroup_Name_A" Column="%Vertical" />
+					<Field Expression="Source_ChannelGroup_Name" Value="0" editType="radio" Name="Source_ChannelGroup_Name_A" Column="%Horizontal" />
+					<Field Expression="Source_ChannelGroup_Name" Value="1" editType="radio" Name="Source_ChannelGroup_Name_A" Column="%Exclude" />
+					<Field Expression="Source_ChannelGroup_Name" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;Source_Channel_Name&quot;" Caption="Source Channel Name">
+					<Field Expression="Source_Channel_Name" Value="0" editType="radio" Name="Source_Channel_Name_A" Column="%Vertical" />
+					<Field Expression="Source_Channel_Name" Value="0" editType="radio" Name="Source_Channel_Name_A" Column="%Horizontal" />
+					<Field Expression="Source_Channel_Name" Value="1" editType="radio" Name="Source_Channel_Name_A" Column="%Exclude" />
+					<Field Expression="Source_Channel_Name" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;PackageType&quot;" Caption="Package Type">
+					<Field Expression="PackageType" Value="0" editType="radio" Name="PackageType_A" Column="%Vertical" />
+					<Field Expression="PackageType" Value="0" editType="radio" Name="PackageType_A" Column="%Horizontal" />
+					<Field Expression="PackageType" Value="1" editType="radio" Name="PackageType_A" Column="%Exclude" />
+					<Field Expression="PackageType" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;Package_Code&quot;" Caption="Package Code">
+					<Field Expression="Package_Code" Value="0" editType="radio" Name="Package_Code_A" Column="%Vertical" />
+					<Field Expression="Package_Code" Value="0" editType="radio" Name="Package_Code_A" Column="%Horizontal" />
+					<Field Expression="Package_Code" Value="1" editType="radio" Name="Package_Code_A" Column="%Exclude" />
+					<Field Expression="Package_Code" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;Package_Name&quot;" Caption="Package Name">
+					<Field Expression="Package_Name" Value="0" editType="radio" Name="Package_Name_A" Column="%Vertical" />
+					<Field Expression="Package_Name" Value="0" editType="radio" Name="Package_Name_A" Column="%Horizontal" />
+					<Field Expression="Package_Name" Value="1" editType="radio" Name="Package_Name_A" Column="%Exclude" />
+					<Field Expression="Package_Name" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;Deal_Name&quot;" Caption="Deal Name">
+					<Field Expression="Deal_Name" Value="0" editType="radio" Name="Deal_Name_A" Column="%Vertical" />
+					<Field Expression="Deal_Name" Value="0" editType="radio" Name="Deal_Name_A" Column="%Horizontal" />
+					<Field Expression="Deal_Name" Value="1" editType="radio" Name="Deal_Name_A" Column="%Exclude" />
+					<Field Expression="Deal_Name" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;RepYear&quot;" Caption="Rep Year">
+					<Field Expression="RepYear" Value="0" editType="radio" Name="RepYear_A" Column="%Vertical" />
+					<Field Expression="RepYear" Value="0" editType="radio" Name="RepYear_A" Column="%Horizontal" />
+					<Field Expression="RepYear" Value="1" editType="radio" Name="RepYear_A" Column="%Exclude" />
+					<Field Expression="RepYear" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;Year&quot;" Caption="Year">
+					<Field Expression="Year" Value="0" editType="radio" Name="Year_A" Column="%Vertical" />
+					<Field Expression="Year" Value="0" editType="radio" Name="Year_A" Column="%Horizontal" />
+					<Field Expression="Year" Value="1" editType="radio" Name="Year_A" Column="%Exclude" />
+					<Field Expression="Year" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;Month&quot;" Caption="Year &amp; Month">
+					<Field Expression="Month" Value="0" editType="radio" Name="Month_A" Column="%Vertical" />
+					<Field Expression="Month" Value="0" editType="radio" Name="Month_A" Column="%Horizontal" />
+					<Field Expression="Month" Value="1" editType="radio" Name="Month_A" Column="%Exclude" />
+					<Field Expression="Month" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;Quarter&quot;" Caption="Quarter">
+					<Field Expression="Quarter" Value="0" editType="radio" Name="Quarter_A" Column="%Vertical" />
+					<Field Expression="Quarter" Value="0" editType="radio" Name="Quarter_A" Column="%Horizontal" />
+					<Field Expression="Quarter" Value="1" editType="radio" Name="Quarter_A" Column="%Exclude" />
+					<Field Expression="Quarter" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;MonthNo&quot;" Caption="Month">
+					<Field Expression="MonthNo" Value="0" editType="radio" Name="MonthNo_A" Column="%Vertical" />
+					<Field Expression="MonthNo" Value="0" editType="radio" Name="MonthNo_A" Column="%Horizontal" />
+					<Field Expression="MonthNo" Value="1" editType="radio" Name="MonthNo_A" Column="%Exclude" />
+					<Field Expression="MonthNo" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;Week&quot;" Caption="Week">
+					<Field Expression="Week" Value="0" editType="radio" Name="Week_A" Column="%Vertical" />
+					<Field Expression="Week" Value="0" editType="radio" Name="Week_A" Column="%Horizontal" />
+					<Field Expression="Week" Value="1" editType="radio" Name="Week_A" Column="%Exclude" />
+					<Field Expression="Week" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;Date&quot;" Caption="Date">
+					<Field Expression="Date" Value="0" editType="radio" Name="Date_A" Column="%Vertical" />
+					<Field Expression="Date" Value="0" editType="radio" Name="Date_A" Column="%Horizontal" />
+					<Field Expression="Date" Value="1" editType="radio" Name="Date_A" Column="%Exclude" />
+					<Field Expression="Date" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;DayGroup&quot;" Caption="Day group">
+					<Field Expression="DayGroup" Value="0" editType="radio" Name="DayGroup_A" Column="%Vertical" />
+					<Field Expression="DayGroup" Value="0" editType="radio" Name="DayGroup_A" Column="%Horizontal" />
+					<Field Expression="DayGroup" Value="1" editType="radio" Name="DayGroup_A" Column="%Exclude" />
+					<Field Expression="DayGroup" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;Day&quot;" Caption="Day">
+					<Field Expression="Day" Value="0" editType="radio" Name="Day_A" Column="%Vertical" />
+					<Field Expression="Day" Value="0" editType="radio" Name="Day_A" Column="%Horizontal" />
+					<Field Expression="Day" Value="1" editType="radio" Name="Day_A" Column="%Exclude" />
+					<Field Expression="Day" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;PeakOverride&quot;" Caption="Prime Override">
+					<Field Expression="PeakOverride" Value="0" editType="radio" Name="PeakOverride_A" Column="%Vertical" />
+					<Field Expression="PeakOverride" Value="0" editType="radio" Name="PeakOverride_A" Column="%Horizontal" />
+					<Field Expression="PeakOverride" Value="1" editType="radio" Name="PeakOverride_A" Column="%Exclude" />
+					<Field Expression="PeakOverride" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;HalfHour&quot;" Caption="1/2 hour">
+					<Field Expression="HalfHour" Value="0" editType="radio" Name="HalfHour_A" Column="%Vertical" />
+					<Field Expression="HalfHour" Value="0" editType="radio" Name="HalfHour_A" Column="%Horizontal" />
+					<Field Expression="HalfHour" Value="1" editType="radio" Name="HalfHour_A" Column="%Exclude" />
+					<Field Expression="HalfHour" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;Source_Daypart_Name&quot;" Caption="Source Daypart Name">
+					<Field Expression="Source_Daypart_Name" Value="0" editType="radio" Name="Source_Daypart_Name_A" Column="%Vertical" />
+					<Field Expression="Source_Daypart_Name" Value="0" editType="radio" Name="Source_Daypart_Name_A" Column="%Horizontal" />
+					<Field Expression="Source_Daypart_Name" Value="1" editType="radio" Name="Source_Daypart_Name_A" Column="%Exclude" />
+					<Field Expression="Source_Daypart_Name" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;Daypart&quot;" Caption="Daypart">
+					<Field Expression="Daypart" Value="0" editType="radio" Name="Daypart_A" Column="%Vertical" />
+					<Field Expression="Daypart" Value="0" editType="radio" Name="Daypart_A" Column="%Horizontal" />
+					<Field Expression="Daypart" Value="1" editType="radio" Name="Daypart_A" Column="%Exclude" />
+					<Field Expression="Daypart" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;IsPeak&quot;" Caption="Prime?">
+					<Field Expression="IsPeak" Value="0" editType="radio" Name="IsPeak_A" Column="%Vertical" />
+					<Field Expression="IsPeak" Value="0" editType="radio" Name="IsPeak_A" Column="%Horizontal" />
+					<Field Expression="IsPeak" Value="1" editType="radio" Name="IsPeak_A" Column="%Exclude" />
+					<Field Expression="IsPeak" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;Spot_Number&quot;" Caption="Spot Number">
+					<Field Expression="Spot_Number" Value="0" editType="radio" Name="Spot_Number_A" Column="%Vertical" />
+					<Field Expression="Spot_Number" Value="0" editType="radio" Name="Spot_Number_A" Column="%Horizontal" />
+					<Field Expression="Spot_Number" Value="1" editType="radio" Name="Spot_Number_A" Column="%Exclude" />
+					<Field Expression="Spot_Number" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;Tot_Spots&quot;" Caption="Total Spots">
+					<Field Expression="Tot_Spots" Value="0" editType="radio" Name="Tot_Spots_A" Column="%Vertical" />
+					<Field Expression="Tot_Spots" Value="0" editType="radio" Name="Tot_Spots_A" Column="%Horizontal" />
+					<Field Expression="Tot_Spots" Value="1" editType="radio" Name="Tot_Spots_A" Column="%Exclude" />
+					<Field Expression="Tot_Spots" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;Source_PIBCat_Name&quot;" Caption="Source PIB Category Name">
+					<Field Expression="Source_PIBCat_Name" Value="0" editType="radio" Name="Source_PIBCat_Name_A" Column="%Vertical" />
+					<Field Expression="Source_PIBCat_Name" Value="0" editType="radio" Name="Source_PIBCat_Name_A" Column="%Horizontal" />
+					<Field Expression="Source_PIBCat_Name" Value="1" editType="radio" Name="Source_PIBCat_Name_A" Column="%Exclude" />
+					<Field Expression="Source_PIBCat_Name" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;PIBCat&quot;" Caption="PIB Category">
+					<Field Expression="PIBCat" Value="0" editType="radio" Name="PIBCat_A" Column="%Vertical" />
+					<Field Expression="PIBCat" Value="0" editType="radio" Name="PIBCat_A" Column="%Horizontal" />
+					<Field Expression="PIBCat" Value="1" editType="radio" Name="PIBCat_A" Column="%Exclude" />
+					<Field Expression="PIBCat" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;IsPremiumPIB&quot;" Caption="PIB?">
+					<Field Expression="IsPremiumPIB" Value="0" editType="radio" Name="IsPremiumPIB_A" Column="%Vertical" />
+					<Field Expression="IsPremiumPIB" Value="0" editType="radio" Name="IsPremiumPIB_A" Column="%Horizontal" />
+					<Field Expression="IsPremiumPIB" Value="1" editType="radio" Name="IsPremiumPIB_A" Column="%Exclude" />
+					<Field Expression="IsPremiumPIB" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;IsCentreBreak&quot;" Caption="Centre Break?">
+					<Field Expression="IsCentreBreak" Value="0" editType="radio" Name="IsCentreBreak_A" Column="%Vertical" />
+					<Field Expression="IsCentreBreak" Value="0" editType="radio" Name="IsCentreBreak_A" Column="%Horizontal" />
+					<Field Expression="IsCentreBreak" Value="1" editType="radio" Name="IsCentreBreak_A" Column="%Exclude" />
+					<Field Expression="IsCentreBreak" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;Campaign&quot;" Caption="Campaign">
+					<Field Expression="Campaign" Value="0" editType="radio" Name="Campaign_A" Column="%Vertical" />
+					<Field Expression="Campaign" Value="0" editType="radio" Name="Campaign_A" Column="%Horizontal" />
+					<Field Expression="Campaign" Value="1" editType="radio" Name="Campaign_A" Column="%Exclude" />
+					<Field Expression="Campaign" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;Campaign_Short_Name&quot;" Caption="Campaign Short Name">
+					<Field Expression="Campaign_Short_Name" Value="0" editType="radio" Name="Campaign_Short_Name_A" Column="%Vertical" />
+					<Field Expression="Campaign_Short_Name" Value="0" editType="radio" Name="Campaign_Short_Name_A" Column="%Horizontal" />
+					<Field Expression="Campaign_Short_Name" Value="1" editType="radio" Name="Campaign_Short_Name_A" Column="%Exclude" />
+					<Field Expression="Campaign_Short_Name" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;ProgramName&quot;" Caption="Program Name">
+					<Field Expression="ProgramName" Value="0" editType="radio" Name="ProgramName_A" Column="%Vertical" />
+					<Field Expression="ProgramName" Value="0" editType="radio" Name="ProgramName_A" Column="%Horizontal" />
+					<Field Expression="ProgramName" Value="1" editType="radio" Name="ProgramName_A" Column="%Exclude" />
+					<Field Expression="ProgramName" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;Duration&quot;" Caption="Duration">
+					<Field Expression="Duration" Value="0" editType="radio" Name="Duration_A" Column="%Vertical" />
+					<Field Expression="Duration" Value="0" editType="radio" Name="Duration_A" Column="%Horizontal" />
+					<Field Expression="Duration" Value="1" editType="radio" Name="Duration_A" Column="%Exclude" />
+					<Field Expression="Duration" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;SpecialAdj&quot;" Caption="SpecialAdj">
+					<Field Expression="SpecialAdj" Value="0" editType="radio" Name="SpecialAdj_A" Column="%Vertical" />
+					<Field Expression="SpecialAdj" Value="0" editType="radio" Name="SpecialAdj_A" Column="%Horizontal" />
+					<Field Expression="SpecialAdj" Value="1" editType="radio" Name="SpecialAdj_A" Column="%Exclude" />
+					<Field Expression="SpecialAdj" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;TVTier&quot;" Caption="TVTier">
+					<Field Expression="TVTier" Value="0" editType="radio" Name="TVTier_A" Column="%Vertical" />
+					<Field Expression="TVTier" Value="0" editType="radio" Name="TVTier_A" Column="%Horizontal" />
+					<Field Expression="TVTier" Value="1" editType="radio" Name="TVTier_A" Column="%Exclude" />
+					<Field Expression="TVTier" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;IsDblSpot&quot;" Caption="IsDblSpot?">
+					<Field Expression="IsDblSpot" Value="0" editType="radio" Name="IsDblSpot_A" Column="%Vertical" />
+					<Field Expression="IsDblSpot" Value="0" editType="radio" Name="IsDblSpot_A" Column="%Horizontal" />
+					<Field Expression="IsDblSpot" Value="1" editType="radio" Name="IsDblSpot_A" Column="%Exclude" />
+					<Field Expression="IsDblSpot" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;NDblSpots&quot;" Caption="NDblSpot?">
+					<Field Expression="NDblSpots" Value="0" editType="radio" Name="NDblSpots_A" Column="%Vertical" />
+					<Field Expression="NDblSpots" Value="0" editType="radio" Name="NDblSpots_A" Column="%Horizontal" />
+					<Field Expression="NDblSpots" Value="1" editType="radio" Name="NDblSpots_A" Column="%Exclude" />
+					<Field Expression="NDblSpots" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;IsDoubleSpotStrategy&quot;" Caption="Double Spot?">
+					<Field Expression="IsDoubleSpotStrategy" Value="0" editType="radio" Name="IsDoubleSpotStrategy_A" Column="%Vertical" />
+					<Field Expression="IsDoubleSpotStrategy" Value="0" editType="radio" Name="IsDoubleSpotStrategy_A" Column="%Horizontal" />
+					<Field Expression="IsDoubleSpotStrategy" Value="1" editType="radio" Name="IsDoubleSpotStrategy_A" Column="%Exclude" />
+					<Field Expression="IsDoubleSpotStrategy" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;IsTopProgram&quot;" Caption="Top Programme?">
+					<Field Expression="IsTopProgram" Value="0" editType="radio" Name="IsTopProgram_A" Column="%Vertical" />
+					<Field Expression="IsTopProgram" Value="0" editType="radio" Name="IsTopProgram_A" Column="%Horizontal" />
+					<Field Expression="IsTopProgram" Value="1" editType="radio" Name="IsTopProgram_A" Column="%Exclude" />
+					<Field Expression="IsTopProgram" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;Objective.ObjectiveName&quot;" Caption="Objective Name">
+					<Field Expression="Objective.ObjectiveName" Value="0" editType="radio" Name="Objective.ObjectiveName_A" Column="%Vertical" />
+					<Field Expression="Objective.ObjectiveName" Value="0" editType="radio" Name="Objective.ObjectiveName_A" Column="%Horizontal" />
+					<Field Expression="Objective.ObjectiveName" Value="1" editType="radio" Name="Objective.ObjectiveName_A" Column="%Exclude" />
+					<Field Expression="Objective.ObjectiveName" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;Objective.IsExcluded_1&quot;" Caption="Objective Excluded">
+					<Field Expression="Objective.IsExcluded:{Caption &quot;Objective Excluded&quot;,Name Objective.IsExcluded_1}" Value="0" editType="radio" Name="Objective.IsExcluded_A" Column="%Vertical" />
+					<Field Expression="Objective.IsExcluded:{Caption &quot;Objective Excluded&quot;,Name Objective.IsExcluded_1}" Value="0" editType="radio" Name="Objective.IsExcluded_A" Column="%Horizontal" />
+					<Field Expression="Objective.IsExcluded:{Caption &quot;Objective Excluded&quot;,Name Objective.IsExcluded_1}" Value="1" editType="radio" Name="Objective.IsExcluded_A" Column="%Exclude" />
+					<Field Expression="Objective.IsExcluded:{Caption &quot;Objective Excluded&quot;,Name Objective.IsExcluded_1}" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;ObjectiveMarket&quot;" Caption="Objective Market">
+					<Field Expression="ObjectiveMarket:Caption &quot;Objective Market&quot;" Value="0" editType="radio" Name="ObjectiveMarket_A" Column="%Vertical" />
+					<Field Expression="ObjectiveMarket:Caption &quot;Objective Market&quot;" Value="0" editType="radio" Name="ObjectiveMarket_A" Column="%Horizontal" />
+					<Field Expression="ObjectiveMarket:Caption &quot;Objective Market&quot;" Value="1" editType="radio" Name="ObjectiveMarket_A" Column="%Exclude" />
+					<Field Expression="ObjectiveMarket:Caption &quot;Objective Market&quot;" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;objec1&quot;" Caption="Spot Objective">
+					<Field Expression="TVSpot.ObjectiveName:{Caption &quot;Spot Objective&quot;,Name objec1}" Value="0" editType="radio" Name="TVSpot.ObjectiveName_A" Column="%Vertical" />
+					<Field Expression="TVSpot.ObjectiveName:{Caption &quot;Spot Objective&quot;,Name objec1}" Value="0" editType="radio" Name="TVSpot.ObjectiveName_A" Column="%Horizontal" />
+					<Field Expression="TVSpot.ObjectiveName:{Caption &quot;Spot Objective&quot;,Name objec1}" Value="1" editType="radio" Name="TVSpot.ObjectiveName_A" Column="%Exclude" />
+					<Field Expression="TVSpot.ObjectiveName:{Caption &quot;Spot Objective&quot;,Name objec1}" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;TVSpot.Burst_Id&quot;" Caption="Spot Burst Id">
+					<Field Expression="TVSpot.Burst_Id:Caption &quot;Spot Burst Id&quot;" Value="0" editType="radio" Name="TVSpot.Burst_Id_A" Column="%Vertical" />
+					<Field Expression="TVSpot.Burst_Id:Caption &quot;Spot Burst Id&quot;" Value="0" editType="radio" Name="TVSpot.Burst_Id_A" Column="%Horizontal" />
+					<Field Expression="TVSpot.Burst_Id:Caption &quot;Spot Burst Id&quot;" Value="1" editType="radio" Name="TVSpot.Burst_Id_A" Column="%Exclude" />
+					<Field Expression="TVSpot.Burst_Id:Caption &quot;Spot Burst Id&quot;" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;CommitmentLineId&quot;" Caption="Commitment Line #">
+					<Field Expression="CommitmentLineId:Caption &quot;Commitment Line #&quot;" Value="0" editType="radio" Name="CommitmentLineId_A" Column="%Vertical" />
+					<Field Expression="CommitmentLineId:Caption &quot;Commitment Line #&quot;" Value="0" editType="radio" Name="CommitmentLineId_A" Column="%Horizontal" />
+					<Field Expression="CommitmentLineId:Caption &quot;Commitment Line #&quot;" Value="1" editType="radio" Name="CommitmentLineId_A" Column="%Exclude" />
+					<Field Expression="CommitmentLineId:Caption &quot;Commitment Line #&quot;" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;TVSpotId&quot;" Caption="Spot #">
+					<Field Expression="TVSpotId:{Caption &quot;Spot #&quot;,Visible True}" Value="0" editType="radio" Name="TVSpotId_A" Column="%Vertical" />
+					<Field Expression="TVSpotId:{Caption &quot;Spot #&quot;,Visible True}" Value="0" editType="radio" Name="TVSpotId_A" Column="%Horizontal" />
+					<Field Expression="TVSpotId:{Caption &quot;Spot #&quot;,Visible True}" Value="1" editType="radio" Name="TVSpotId_A" Column="%Exclude" />
+					<Field Expression="TVSpotId:{Caption &quot;Spot #&quot;,Visible True}" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;Vehicle&quot;" Caption="Vehicle">
+					<Field Expression="Vehicle" Value="0" editType="radio" Name="Vehicle_A" Column="%Vertical" />
+					<Field Expression="Vehicle" Value="0" editType="radio" Name="Vehicle_A" Column="%Horizontal" />
+					<Field Expression="Vehicle" Value="1" editType="radio" Name="Vehicle_A" Column="%Exclude" />
+					<Field Expression="Vehicle" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;AdjustmentFactor1&quot;" Caption="Adj. Factor 1">
+					<Field Expression="AdjustmentFactor1" Value="0" editType="radio" Name="AdjustmentFactor1_A" Column="%Vertical" />
+					<Field Expression="AdjustmentFactor1" Value="0" editType="radio" Name="AdjustmentFactor1_A" Column="%Horizontal" />
+					<Field Expression="AdjustmentFactor1" Value="1" editType="radio" Name="AdjustmentFactor1_A" Column="%Exclude" />
+					<Field Expression="AdjustmentFactor1" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;AdjustmentFactor2&quot;" Caption="Adj. Factor 2">
+					<Field Expression="AdjustmentFactor2" Value="0" editType="radio" Name="AdjustmentFactor2_A" Column="%Vertical" />
+					<Field Expression="AdjustmentFactor2" Value="0" editType="radio" Name="AdjustmentFactor2_A" Column="%Horizontal" />
+					<Field Expression="AdjustmentFactor2" Value="1" editType="radio" Name="AdjustmentFactor2_A" Column="%Exclude" />
+					<Field Expression="AdjustmentFactor2" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;AdjustmentFactor3&quot;" Caption="Adj. Factor 3">
+					<Field Expression="AdjustmentFactor3" Value="0" editType="radio" Name="AdjustmentFactor3_A" Column="%Vertical" />
+					<Field Expression="AdjustmentFactor3" Value="0" editType="radio" Name="AdjustmentFactor3_A" Column="%Horizontal" />
+					<Field Expression="AdjustmentFactor3" Value="1" editType="radio" Name="AdjustmentFactor3_A" Column="%Exclude" />
+					<Field Expression="AdjustmentFactor3" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;AdjustmentFactor4&quot;" Caption="Adj. Factor 4">
+					<Field Expression="AdjustmentFactor4" Value="0" editType="radio" Name="AdjustmentFactor4_A" Column="%Vertical" />
+					<Field Expression="AdjustmentFactor4" Value="0" editType="radio" Name="AdjustmentFactor4_A" Column="%Horizontal" />
+					<Field Expression="AdjustmentFactor4" Value="1" editType="radio" Name="AdjustmentFactor4_A" Column="%Exclude" />
+					<Field Expression="AdjustmentFactor4" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+				<Row Value="&quot;AdjustmentFactor5&quot;" Caption="Adj. Factor 5">
+					<Field Expression="AdjustmentFactor5" Value="0" editType="radio" Name="AdjustmentFactor5_A" Column="%Vertical" />
+					<Field Expression="AdjustmentFactor5" Value="0" editType="radio" Name="AdjustmentFactor5_A" Column="%Horizontal" />
+					<Field Expression="AdjustmentFactor5" Value="1" editType="radio" Name="AdjustmentFactor5_A" Column="%Exclude" />
+					<Field Expression="AdjustmentFactor5" Value="0" editType="bool" Column="%Totals" />
+				</Row>
+			</Rows>
+			<Menu Command=":..:ExecuteMenu (mReviewSpotsSummary)" Caption="Apply" Param="%Vertical|%Horizontal|%Totals|../%selection|set %MasterClient=104|set %RepYear=292|set %Country=67|set %Data=(GRP, GRP_Eq, Num_Spots, Num_Spots_Eq, Num_Spots_Eq_COVID)|set %S_Row={}|set %S_Col={}" />
+		</Grid>
+	</Menu>
+	<Menu Command=":dropform:" Caption="Metrics">
+		<Grid CanSelect="No" IsMeta="Yes">
+			<Columns>
+				<Column Name="Field" Caption="Field" Width="100" />
+				<Column Name="%Data" Caption="Normal" />
+				<Column Name="%S_Row" Caption="%Row" />
+				<Column Name="%S_Col" Caption="%Column" />
+			</Columns>
+			<Rows Name="Field">
+				<Row Value="&quot;GRP&quot;" Caption="Act. GRPs">
+					<Field Column="%Data" Expression="GRP" editType="bool" Value="1" />
+					<Field Column="%S_Row" Expression="GRP" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="GRP" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;GRP_Eq&quot;" Caption="Eqv. GRPs">
+					<Field Column="%Data" Expression="GRP_Eq" editType="bool" Value="1" />
+					<Field Column="%S_Row" Expression="GRP_Eq" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="GRP_Eq" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;Num_Spots&quot;" Caption="No. Spots">
+					<Field Column="%Data" Expression="Num_Spots" editType="bool" Value="1" />
+					<Field Column="%S_Row" Expression="Num_Spots" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="Num_Spots" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;Num_Spots_Eq&quot;" Caption="No. Eqv. Spots">
+					<Field Column="%Data" Expression="Num_Spots_Eq" editType="bool" Value="1" />
+					<Field Column="%S_Row" Expression="Num_Spots_Eq" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="Num_Spots_Eq" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;Num_Spots_Eq_COVID&quot;" Caption="No. Eqv. Spots Excl. COVID">
+					<Field Column="%Data" Expression="Num_Spots_Eq_COVID" editType="bool" Value="1" />
+					<Field Column="%S_Row" Expression="Num_Spots_Eq_COVID" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="Num_Spots_Eq_COVID" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;BImpacts&quot;" Caption="Booked Impacts">
+					<Field Column="%Data" Expression="BImpacts" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="BImpacts" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="BImpacts" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;BImpacts_Eq&quot;" Caption="Booked Eqv. Impacts">
+					<Field Column="%Data" Expression="BImpacts_Eq" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="BImpacts_Eq" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="BImpacts_Eq" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;Impacts&quot;" Caption="Impacts">
+					<Field Column="%Data" Expression="Impacts" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="Impacts" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="Impacts" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;Impacts_AP&quot;" Caption="AP Impacts">
+					<Field Column="%Data" Expression="Impacts_AP" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="Impacts_AP" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="Impacts_AP" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;Impacts_Eq&quot;" Caption="Eqv. Impacts">
+					<Field Column="%Data" Expression="Impacts_Eq" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="Impacts_Eq" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="Impacts_Eq" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;Impacts_Eq_AP&quot;" Caption="AP Eqv. Impacts">
+					<Field Column="%Data" Expression="Impacts_Eq_AP" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="Impacts_Eq_AP" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="Impacts_Eq_AP" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;BGRP&quot;" Caption="Booked GRPs">
+					<Field Column="%Data" Expression="BGRP" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="BGRP" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="BGRP" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;GRP_COVID&quot;" Caption="Act. GRPs Excl. COVID">
+					<Field Column="%Data" Expression="GRP_COVID" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="GRP_COVID" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="GRP_COVID" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;GRP_Market&quot;" Caption="Act. Market GRPs">
+					<Field Column="%Data" Expression="GRP_Market" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="GRP_Market" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="GRP_Market" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;GRP_AP&quot;" Caption="AP Actual GRP's">
+					<Field Column="%Data" Expression="GRP_AP" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="GRP_AP" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="GRP_AP" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;BGRP_Eq&quot;" Caption="Booked Eqv. GRPs">
+					<Field Column="%Data" Expression="BGRP_Eq" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="BGRP_Eq" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="BGRP_Eq" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;GRP_Eq_COVID&quot;" Caption="Eqv. GRPs Excl. COVID">
+					<Field Column="%Data" Expression="GRP_Eq_COVID" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="GRP_Eq_COVID" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="GRP_Eq_COVID" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;GRP_Eq_Market&quot;" Caption="Eqv. Market GRPs">
+					<Field Column="%Data" Expression="GRP_Eq_Market" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="GRP_Eq_Market" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="GRP_Eq_Market" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;GRP_Eq_AP&quot;" Caption="AP Eqv. GRP's">
+					<Field Column="%Data" Expression="GRP_Eq_AP" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="GRP_Eq_AP" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="GRP_Eq_AP" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;Dur10&quot;" Caption="#10 sec">
+					<Field Column="%Data" Expression="Dur10" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="Dur10" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="Dur10" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;Dur30&quot;" Caption="#30 sec">
+					<Field Column="%Data" Expression="Dur30" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="Dur30" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="Dur30" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;TVUnits&quot;" Caption="TV Units">
+					<Field Column="%Data" Expression="TVUnits" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="TVUnits" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="TVUnits" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;TVUnits_Eq&quot;" Caption="Eqv. TV Units">
+					<Field Column="%Data" Expression="TVUnits_Eq" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="TVUnits_Eq" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="TVUnits_Eq" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;TVUnits_Eq_COVID&quot;" Caption="Eqv. TV Units Excl. COVID">
+					<Field Column="%Data" Expression="TVUnits_Eq_COVID" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="TVUnits_Eq_COVID" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="TVUnits_Eq_COVID" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;SpecAdjFacTV&quot;" Caption="Special Adj. Factor">
+					<Field Column="%Data" Expression="SpecAdjFacTV" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="SpecAdjFacTV" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="SpecAdjFacTV" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;SpecialPremium&quot;" Caption="Special Premium">
+					<Field Column="%Data" Expression="SpecialPremium" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="SpecialPremium" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="SpecialPremium" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;Spend_Ttl&quot;" Caption="Total Spend">
+					<Field Column="%Data" Expression="Spend_Ttl" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="Spend_Ttl" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="Spend_Ttl" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;Spend_Exclusion&quot;" Caption="Excluded Spend">
+					<Field Column="%Data" Expression="Spend_Exclusion" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="Spend_Exclusion" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="Spend_Exclusion" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;Spend_Exception&quot;" Caption="Exception Spend">
+					<Field Column="%Data" Expression="Spend_Exception" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="Spend_Exception" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="Spend_Exception" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;Spend_Net_Net&quot;" Caption="Analysable Spend">
+					<Field Column="%Data" Expression="Spend_Net_Net" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="Spend_Net_Net" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="Spend_Net_Net" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;Spend_Measured&quot;" Caption="Measured Spend">
+					<Field Column="%Data" Expression="Spend_Measured" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="Spend_Measured" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="Spend_Measured" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;Spend_Pl_Exception&quot;" Caption="Exception Planned Spend">
+					<Field Column="%Data" Expression="Spend_Pl_Exception" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="Spend_Pl_Exception" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="Spend_Pl_Exception" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;Spend_Pl_Exclusion&quot;" Caption="Exclusion Planned Spend">
+					<Field Column="%Data" Expression="Spend_Pl_Exclusion" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="Spend_Pl_Exclusion" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="Spend_Pl_Exclusion" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;Spend_Pl_Net_Net&quot;" Caption="Analysable Planned Spend">
+					<Field Column="%Data" Expression="Spend_Pl_Net_Net" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="Spend_Pl_Net_Net" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="Spend_Pl_Net_Net" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;Spend_Pl_Measured&quot;" Caption="Measured Planned Spend">
+					<Field Column="%Data" Expression="Spend_Pl_Measured" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="Spend_Pl_Measured" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="Spend_Pl_Measured" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;Spend_Pl_Ttl&quot;" Caption="Total Planned Spend">
+					<Field Column="%Data" Expression="Spend_Pl_Ttl" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="Spend_Pl_Ttl" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="Spend_Pl_Ttl" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;Spend_SpecialPremium&quot;" Caption="Measured Special Premium">
+					<Field Column="%Data" Expression="Spend_SpecialPremium" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="Spend_SpecialPremium" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="Spend_SpecialPremium" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;Spend_Target&quot;" Caption="Target Spend">
+					<Field Column="%Data" Expression="Spend_Target" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="Spend_Target" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="Spend_Target" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;Spend_Target_QualAdj&quot;" Caption="Target Spend Qual. Adj.">
+					<Field Column="%Data" Expression="Spend_Target_QualAdj" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="Spend_Target_QualAdj" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="Spend_Target_QualAdj" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;Spend_Target_CIAdj&quot;" Caption="Target Spend Cnt Inf. Adj.">
+					<Field Column="%Data" Expression="Spend_Target_CIAdj" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="Spend_Target_CIAdj" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="Spend_Target_CIAdj" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;Spend_Target_MIAdj&quot;" Caption="Target Spend Mkt Inf. Adj.">
+					<Field Column="%Data" Expression="Spend_Target_MIAdj" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="Spend_Target_MIAdj" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="Spend_Target_MIAdj" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;Spend_Target_Unadj&quot;" Caption="Target Spend Unadj.">
+					<Field Column="%Data" Expression="Spend_Target_Unadj" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="Spend_Target_Unadj" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="Spend_Target_Unadj" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;Spend_Target_VolAdj&quot;" Caption="Target Spend Vol. Adj.">
+					<Field Column="%Data" Expression="Spend_Target_VolAdj" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="Spend_Target_VolAdj" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="Spend_Target_VolAdj" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;Spend_Target_VolCIAdj&quot;" Caption="Target Spend Vol.+Cnt Inf. Adj">
+					<Field Column="%Data" Expression="Spend_Target_VolCIAdj" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="Spend_Target_VolCIAdj" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="Spend_Target_VolCIAdj" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;Spend_Target_VolMIAdj&quot;" Caption="Target Spend Vol.+Mkt Inf. Adj">
+					<Field Column="%Data" Expression="Spend_Target_VolMIAdj" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="Spend_Target_VolMIAdj" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="Spend_Target_VolMIAdj" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;Spend_Target_COVID&quot;" Caption="Target Spend COVID">
+					<Field Column="%Data" Expression="Spend_Target_COVID" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="Spend_Target_COVID" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="Spend_Target_COVID" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;Spend_Target_QualAdj_COVID&quot;" Caption="Target Spend Qual. Adj. COVID">
+					<Field Column="%Data" Expression="Spend_Target_QualAdj_COVID" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="Spend_Target_QualAdj_COVID" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="Spend_Target_QualAdj_COVID" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;Spend_Target_CIAdj_COVID&quot;" Caption="Target Spend Cnt Inf. Adj. COV">
+					<Field Column="%Data" Expression="Spend_Target_CIAdj_COVID" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="Spend_Target_CIAdj_COVID" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="Spend_Target_CIAdj_COVID" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;Spend_Target_MIAdj_COVID&quot;" Caption="Target Spend Mkt Inf. Adj. COV">
+					<Field Column="%Data" Expression="Spend_Target_MIAdj_COVID" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="Spend_Target_MIAdj_COVID" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="Spend_Target_MIAdj_COVID" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;Spend_Target_Unadj_COVID&quot;" Caption="Target Spend Unadj.COVID">
+					<Field Column="%Data" Expression="Spend_Target_Unadj_COVID" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="Spend_Target_Unadj_COVID" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="Spend_Target_Unadj_COVID" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;Spend_Target_VolAdj_COVID&quot;" Caption="Target Spend Vol. Adj. COVID">
+					<Field Column="%Data" Expression="Spend_Target_VolAdj_COVID" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="Spend_Target_VolAdj_COVID" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="Spend_Target_VolAdj_COVID" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;Spend_Target_VolCIAdj_COVID&quot;" Caption="T Spend Vol.+Cnt Inf. Adj. COV">
+					<Field Column="%Data" Expression="Spend_Target_VolCIAdj_COVID" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="Spend_Target_VolCIAdj_COVID" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="Spend_Target_VolCIAdj_COVID" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;Spend_Target_VolMIAdj_COVID&quot;" Caption="T Spend Vol.+Mkt Inf. Adj. COV">
+					<Field Column="%Data" Expression="Spend_Target_VolMIAdj_COVID" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="Spend_Target_VolMIAdj_COVID" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="Spend_Target_VolMIAdj_COVID" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;Spend_Ratecard&quot;" Caption="Ratecard Price">
+					<Field Column="%Data" Expression="Spend_Ratecard" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="Spend_Ratecard" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="Spend_Ratecard" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;MULTI_Spend_Net_Net_2&quot;" Caption="Actual CPU">
+					<Field Column="%Data" Expression="Spend_Net_Net/TVUnits_Eq" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="Spend_Net_Net/TVUnits_Eq" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="Spend_Net_Net/TVUnits_Eq" editType="bool" Value="0" />
+				</Row>
+				<Row Value="&quot;MULTI_Spend_Target_Unadj_2&quot;" Caption="Commit. CPU">
+					<Field Column="%Data" Expression="Spend_Target_Unadj/TVUnits_Eq" editType="bool" Value="0" />
+					<Field Column="%S_Row" Expression="Spend_Target_Unadj/TVUnits_Eq" editType="bool" Value="0" />
+					<Field Column="%S_Col" Expression="Spend_Target_Unadj/TVUnits_Eq" editType="bool" Value="0" />
+				</Row>
+			</Rows>
+			<Menu Command=":..:ExecuteMenu (mReviewSpotsSummary)" Caption="Apply" Param="%Data|%S_Row|%S_Col|set %MasterClient=104|set %RepYear=292|set %Country=67|set %Vertical=(IsExcluded, IsException, TVType, Market, Demo, DataSource, Channel)|set %Horizontal={}|set %Totals={}" />
+		</Grid>
+	</Menu>
+	<Menu Command="ExecuteMenu (mReviewSpotsSummary)" Caption="Refresh" Param="set %MasterClient=104|set %RepYear=292|set %Country=67|set %Vertical=(IsExcluded, IsException, TVType, Market, Demo, DataSource, Channel)|set %Horizontal={}|set %Totals={}|set %Data=(GRP, GRP_Eq, Num_Spots, Num_Spots_Eq, Num_Spots_Eq_COVID)|set %S_Row={}|set %S_Col={}" />
+	<Menu Caption="Excel" Param="%_inclPrm|%_mrgCells|set %MasterClient=104|set %RepYear=292|set %Country=67|set %Vertical=(IsExcluded, IsException, TVType, Market, Demo, DataSource, Channel)|set %Horizontal={}|set %Totals={}|set %Data=(GRP, GRP_Eq, Num_Spots, Num_Spots_Eq, Num_Spots_Eq_COVID)|set %S_Row={}|set %S_Col={}" Command=":dropform:">
+		<Card Layout="Columns" Columns="2">
+			<Field Name="%_inclPrm" editType="Bool" Required="Yes" Caption="&lt;strong&gt;Include Title and Parameters?&lt;/strong&gt;" Enabled="Yes" Default="True" />
+			<Field Name="%_mrgCells" editType="Bool" Required="Yes" Caption="&lt;strong&gt;Merge Cells?&lt;/strong&gt;" Enabled="Yes" Default="True" />
+			<Menu Caption="Run" Param="%_inclPrm|%_mrgCells|set %MasterClient=104|set %RepYear=292|set %Country=67|set %Vertical=(IsExcluded, IsException, TVType, Market, Demo, DataSource, Channel)|set %Horizontal={}|set %Totals={}|set %Data=(GRP, GRP_Eq, Num_Spots, Num_Spots_Eq, Num_Spots_Eq_COVID)|set %S_Row={}|set %S_Col={}" Command=":below:ToExcel(mReviewSpotsSummary, %if(%_inclPrm:Mandatory=True, ShowParameters), %if(%_mrgCells:Mandatory=False, ExportFlat))" />
+		</Card>
+	</Menu>
+	<Menu Caption="Manual Prime Override" Command=":dropform:" Name="__mnuManual_Prime_Override">
+		<Card Layout="Columns" Columns="2">
+			<Field Name="%PeakOverride" editType="Integer" Size="50" Required="Yes" Selection="Single" Caption="&lt;strong&gt;Prime Override&lt;/strong&gt;" Enabled="Yes" Default="2" Lookup="PeakOverride" LOV=":popup:Selection(ListTable((PeakOverrideName:Display) from(PeakOverride) by(PeakOverride:Store) order(PeakOverride)), {PeakOverride=%PeakOverride})" LOVParam="%PeakOverride|next/Meta.%objectid" />
+			<Menu Caption="Run" Name="__mnuManual_Prime_Override" Param="%selection|%PeakOverride|set %MasterClient=104|set %RepYear=292|set %Country=67|set %Vertical=(IsExcluded, IsException, TVType, Market, Demo, DataSource, Channel)|set %Horizontal={}|set %Totals={}|set %Data=(GRP, GRP_Eq, Num_Spots, Num_Spots_Eq, Num_Spots_Eq_COVID)|set %S_Row={}|set %S_Col={}|next/Meta.%objectid" Command=":below:ExecuteMenu(__mnuManual_Prime_Override)" />
+		</Card>
+	</Menu>
+	<Menu Caption="List Spots" Command=":new:ExecuteMenu(__mnuList_Spots)" Name="__mnuList_Spots" Param="%selection|%Ascending=(Date, ITime)|set %MasterClient=104|set %RepYear=292|set %Country=67|set %Vertical=(IsExcluded, IsException, TVType, Market, Demo, DataSource, Channel)|set %Horizontal={}|set %Totals={}|set %Data=(GRP, GRP_Eq, Num_Spots, Num_Spots_Eq, Num_Spots_Eq_COVID)|set %S_Row={}|set %S_Col={}|next/Meta.%objectid" />
+	<Menu Caption="Special Adjustment" ColumnsParam="1" Command=":dropform:" Name="__mnuSpecial_Adjustment">
+		<Card Layout="Columns" Columns="1">
+			<Field Name="%SpecialAdj" editType="Integer" Size="100" Required="Yes" Selection="Single" Caption="&lt;strong&gt;SpecialAdj&lt;/strong&gt;" Enabled="Yes" Lookup="SpecialAdj" LOV=":popup:Selection(ListTable((SpecialAdjName:Display, SpecialAdjFactor, SpecialAdjNotes) @(MasterClientId=%MasterClient, MediaType=%MediaType) by(SpecialAdjId:{Visible False,Store}) order(SpecialAdjId), TextFilter=%thistext), {SpecialAdjId=%SpecialAdj})" LOVParam="%MasterClient|%MediaType|%thistext|%SpecialAdj|next/Meta.%objectid" AutoSugg="2" />
+			<Menu Caption="Run" ColumnsParam="1" Name="__mnuSpecial_Adjustment" Param="%selection|%SpecialAdj|set %MasterClient=104|set %RepYear=292|set %Country=67|set %Vertical=(IsExcluded, IsException, TVType, Market, Demo, DataSource, Channel)|set %Horizontal={}|set %Totals={}|set %Data=(GRP, GRP_Eq, Num_Spots, Num_Spots_Eq, Num_Spots_Eq_COVID)|set %S_Row={}|set %S_Col={}|next/Meta.%objectid" Command=":below:ExecuteMenu(__mnuSpecial_Adjustment)" />
+		</Card>
+	</Menu>
+	<Menu Caption="Remove Special Adjustment" ColumnsParam="1" Command="ExecuteMenu(__mnuRemove_Special_Adjustment)" Name="__mnuRemove_Special_Adjustment" Param="%selection|set %MasterClient=104|set %RepYear=292|set %Country=67|set %Vertical=(IsExcluded, IsException, TVType, Market, Demo, DataSource, Channel)|set %Horizontal={}|set %Totals={}|set %Data=(GRP, GRP_Eq, Num_Spots, Num_Spots_Eq, Num_Spots_Eq_COVID)|set %S_Row={}|set %S_Col={}|next/Meta.%objectid" />
+	<Menu Caption="Mark Top Pgm" ColumnsParam="1" Command=":dropform:" Name="__mnuMark_Top_Pgm">
+		<Card Layout="Columns" Columns="1">
+			<Field Name="%IsTopProgram" editType="Bool" Size="10" Required="Yes" Selection="Single" Caption="&lt;strong&gt;Top Programme?&lt;/strong&gt;" Enabled="Yes" />
+			<Menu Caption="Run" ColumnsParam="1" Name="__mnuMark_Top_Pgm" Param="%selection|%IsTopProgram|set %MasterClient=104|set %RepYear=292|set %Country=67|set %Vertical=(IsExcluded, IsException, TVType, Market, Demo, DataSource, Channel)|set %Horizontal={}|set %Totals={}|set %Data=(GRP, GRP_Eq, Num_Spots, Num_Spots_Eq, Num_Spots_Eq_COVID)|set %S_Row={}|set %S_Col={}|next/Meta.%objectid" Command=":below:ExecuteMenu(__mnuMark_Top_Pgm)" />
+		</Card>
+	</Menu>
+	<Menu Caption="Assign Tier" ColumnsParam="1" Command=":dropform:" Name="__mnuAssign_Tier">
+		<Card Layout="Columns" Columns="1">
+			<Field Name="%TVTier" editType="Integer" Size="10" Required="Yes" Selection="Single" Caption="&lt;strong&gt;TVTier&lt;/strong&gt;" Enabled="Yes" />
+			<Menu Caption="Run" ColumnsParam="1" Name="__mnuAssign_Tier" Param="%selection|%TVTier|set %MasterClient=104|set %RepYear=292|set %Country=67|set %Vertical=(IsExcluded, IsException, TVType, Market, Demo, DataSource, Channel)|set %Horizontal={}|set %Totals={}|set %Data=(GRP, GRP_Eq, Num_Spots, Num_Spots_Eq, Num_Spots_Eq_COVID)|set %S_Row={}|set %S_Col={}|next/Meta.%objectid" Command=":below:ExecuteMenu(__mnuAssign_Tier)" />
+		</Card>
+	</Menu>
+	<Menu Caption="Assign Double-Spot" ColumnsParam="1" Command=":dropform:" Name="__mnuAssign_DoubleSpot">
+		<Card Layout="Columns" Columns="1">
+			<Field Name="%IsDoubleSpotStrategy" editType="Bool" Size="10" Required="Yes" Selection="Single" Caption="&lt;strong&gt;Double Spot?&lt;/strong&gt;" Enabled="Yes" />
+			<Menu Caption="Run" ColumnsParam="1" Name="__mnuAssign_DoubleSpot" Param="%selection|%IsDoubleSpotStrategy|set %MasterClient=104|set %RepYear=292|set %Country=67|set %Vertical=(IsExcluded, IsException, TVType, Market, Demo, DataSource, Channel)|set %Horizontal={}|set %Totals={}|set %Data=(GRP, GRP_Eq, Num_Spots, Num_Spots_Eq, Num_Spots_Eq_COVID)|set %S_Row={}|set %S_Col={}|next/Meta.%objectid" Command=":below:ExecuteMenu(__mnuAssign_DoubleSpot)" />
+		</Card>
+	</Menu>
+</Grid>

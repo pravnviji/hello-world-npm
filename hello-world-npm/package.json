@@ -1,0 +1,13 @@
+{
+    "name": "mock-server-demo",
+    "private": true,
+    "workspaces": [
+        "packages/*"
+    ],
+    "devDependencies": {
+        "@semantic-release/changelog": "^6.0.3",
+        "@semantic-release/git": "^10.0.1",
+        "@semantic-release/npm": "^12.0.1",
+        "semantic-release": "^24.2.3"
+    }
+}
