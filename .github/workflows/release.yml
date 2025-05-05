@@ -8,11 +8,12 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
+
     env:  # Set environment variables at the job level
-      NPM_TOKEN: ${{ env.NPM_TOKEN }}  # Assuming NPM_TOKEN is set in your runner's environment
-      GH_TOKEN: ${{ env.GH_TOKEN }}  # Assuming GH_TOKEN is set in your runner's environment
-      NODE_AUTH_TOKEN: ${{ env.NPM_TOKEN }}  # Assuming NODE_AUTH_TOKEN is set in your runner's environment
-    
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}  # Replace with actual environmental variable or secret
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}    # Replace with actual environmental variable or secret
+      NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}  # Replace with actual environmental variable or secret
+
     steps:
       - name: Checkout
         uses: actions/checkout@v3
