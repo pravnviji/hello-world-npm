@@ -1,6 +1,5 @@
 {
-    "name": "mock-server-demo",
-    "private": true,
+    "name": "sample-cli-test",
     "workspaces": [
         "packages/*"
     ],

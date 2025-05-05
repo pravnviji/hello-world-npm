@@ -1,13 +1,13 @@
 {
-  "name": "hello-world-praveenbabu",
-  "version": "2.0.5",
+  "name": "sample-cli-test",
+  "version": "1.0.0",
   "description": "Simple CLI that says hello",
   "main": "index.js",
   "bin": {
-    "hello-world": "./index.js",
-    "parser": "./parser.cjs"
+    "mycli": "./index.js",
+    "parser": "parser.cjs"
   },
-  "scripts":{
+  "scripts": {
     "parser": "node parser.cjs"
   },
   "type": "module",
@@ -16,7 +16,8 @@
     "world",
     "npm",
     "example",
-    "cli"
+    "cli",
+    "tool"
   ],
   "author": "Praveenbabu",
   "license": "MIT",
