@@ -9,9 +9,9 @@ jobs:
   release:
     runs-on: ubuntu-latest
     env:  # Set environment variables at the job level
-      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-      GH_TOKEN: ${{ secrets.GH_TOKEN }}
-      NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      NPM_TOKEN: ${{ env.NPM_TOKEN }}  # Assuming NPM_TOKEN is set in your runner's environment
+      GH_TOKEN: ${{ env.GH_TOKEN }}  # Assuming GH_TOKEN is set in your runner's environment
+      NODE_AUTH_TOKEN: ${{ env.NPM_TOKEN }}  # Assuming NODE_AUTH_TOKEN is set in your runner's environment
     
     steps:
       - name: Checkout
@@ -23,7 +23,7 @@ jobs:
           node-version: '20'
     
       - name: Authenticate npm
-        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >> ~/.npmrc
+        run: echo "//registry.npmjs.org/:_authToken=${{ env.NPM_TOKEN }}" >> ~/.npmrc
 
       - name: Install dependencies
         run: npm install
