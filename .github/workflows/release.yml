@@ -21,7 +21,12 @@ jobs:
 
       - name: Authenticate npm
         run: |
-          cat "testing npm token ${{ secrets.NPM_TOKEN }}"
+          if [ -z "${{ secrets.NPM_TOKEN }}" ]; then
+          echo "NPM_TOKEN is NOT set value - ${{secrets.NPM_TOKEN}}"
+          exit 1
+          else
+            echo "NPM_TOKEN is set"
+          fi
           echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >> ~/.npmrc
           echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >> ${{ runner.temp }}/.npmrc
           cat ~/.npmrc
