@@ -1,4 +1,4 @@
-name: Release
+name: Publish to npm
 
 on:
   push:
@@ -8,10 +8,6 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
-    env:  # Set environment variables at the job level
-      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-      GH_TOKEN: ${{ secrets.GH_TOKEN }}
-      NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
     
     steps:
       - name: Checkout
@@ -21,15 +17,20 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+          registry-url: 'https://registry.npmjs.org'
     
       - name: Authenticate npm
         run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >> ~/.npmrc
 
       - name: Install dependencies
         run: npm install
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GH_TOKEN:  ${{ secrets.GH_TOKEN }}
         
       - name: Run semantic-release
         run: npx semantic-release
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GH_TOKEN:  ${{ secrets.GH_TOKEN }}
   
-      - name: Publish to npm
-        run: npm publish
