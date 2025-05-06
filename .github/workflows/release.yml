@@ -7,8 +7,9 @@ on:
 
 jobs:
   release:
-    runs-on: ubuntu-latesta
+    runs-on: ubuntu-latest
     env:
+      ABCDEF: 11231243123
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       GH_TOKEN: ${{ secrets.GH_TOKEN }}
     permissions:
