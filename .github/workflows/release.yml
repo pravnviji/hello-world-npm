@@ -12,7 +12,7 @@ jobs:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       GH_TOKEN: ${{ secrets.GH_TOKEN }}
     permissions:
-      contents: read
+      contents: write
       packages: write
 
     steps:
@@ -27,8 +27,9 @@ jobs:
 
       - name: Authenticate npm
         run: |
-          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}"
-
+            echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+            cat ~/.npmrc
+        
       - name: Install dependencies
         run: npm install
 
