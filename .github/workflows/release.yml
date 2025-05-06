@@ -22,7 +22,7 @@ jobs:
       - name: Authenticate npm
         run: |
           if [ -z "${{ secrets.NPM_TOKEN }}" ]; then
-          echo "NPM_TOKEN is NOT set value - ${{secrets.NPM_TOKEN}}"
+          echo "NPM_TOKEN is NOT set value - ${{secrets.NPM_TOKEN}} and GT_TOKEN ${{ secrets.GH_TOKEN }}"
           exit 1
           else
             echo "NPM_TOKEN is set"
