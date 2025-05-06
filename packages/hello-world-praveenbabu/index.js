@@ -1,3 +1,3 @@
 #!/usr/bin/env node
 
-console.log("Hello from your CLI tools!");
+console.log("Hello from your CLI tools te!");
