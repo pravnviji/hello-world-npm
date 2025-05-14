@@ -1,3 +1,3 @@
 #!/usr/bin/env node
 
-console.log("Testing bug fix version  v1.4.1 mock server!!!");
+console.log("Testing Major version v2.0.0 mock server!!!");
