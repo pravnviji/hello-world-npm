@@ -1,6 +1,6 @@
 {
   "name": "sample-cli-test",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple CLI that says hello",
   "main": "index.js",
   "bin": {
