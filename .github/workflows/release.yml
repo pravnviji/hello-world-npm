@@ -31,7 +31,7 @@ jobs:
       - name: Debug token
         run: echo "NPMToken ---> ${NPM_TOKEN}" 
         env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
 
       - name: Install dependencies
         run: npm ci
