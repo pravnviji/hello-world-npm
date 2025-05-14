@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com-personal/pravnviji/hello-world-npm/compare/v1.1.0...v1.1.1) (2025-05-14)
+
+
+### Bug Fixes
+
+* update repository URL in release configuration and modify greeting message in CLI tool ([1810c31](https://github.com-personal/pravnviji/hello-world-npm/commit/1810c310fb5b9eb9e56de86a10b64fcad70bb401))
+
 # [1.1.0](https://github.com-personal/pravnviji/hello-world-npm/compare/v1.0.0...v1.1.0) (2025-05-14)
 
 
