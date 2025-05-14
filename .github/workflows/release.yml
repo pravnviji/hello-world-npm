@@ -32,7 +32,7 @@ jobs:
         run: npm ci
 
       - name: Run semantic-release
-        run: CI=true npx semantic-release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: CI=true npx semantic-release
