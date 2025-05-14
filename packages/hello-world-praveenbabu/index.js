@@ -1,3 +1,3 @@
 #!/usr/bin/env node
 
-console.log("fix: Fixes in Historical  bug fixes of the package");
+console.log("feat: Fixes in Feat fixes of the package");
