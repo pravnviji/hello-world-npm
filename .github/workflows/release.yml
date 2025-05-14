@@ -28,11 +28,16 @@ jobs:
       - name: Authenticate npm
         run: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > "$NPM_CONFIG_USERCONFIG"
 
+      - name: Debug token
+        run: echo "NPMToken ---> ${NPM_TOKEN}" 
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
       - name: Install dependencies
         run: npm ci
 
       - name: Run semantic-release
-        run: CI=true npx semantic-release
+        run:  npx semantic-release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: $NPM_TOKEN
+          NPM_TOKEN:  ${{ secrets.NPM_TOKEN }}
