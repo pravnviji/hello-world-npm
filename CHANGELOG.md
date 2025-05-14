@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com-personal/pravnviji/hello-world-npm/compare/v1.1.2...v1.2.0) (2025-05-14)
+
+
+### Features
+
+* update version to 1.1.4 and modify mock server message ([cba4189](https://github.com-personal/pravnviji/hello-world-npm/commit/cba4189dbafcaa8f864a82ce2c1205e47d0641b7))
+
 ## [1.1.2](https://github.com-personal/pravnviji/hello-world-npm/compare/v1.1.1...v1.1.2) (2025-05-14)
 
 
