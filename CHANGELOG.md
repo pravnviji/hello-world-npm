@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com-personal/pravnviji/hello-world-npm/compare/v2.0.2...v2.1.0) (2025-05-14)
+
+
+### Features
+
+* Update log message to reflect feature bug fixes in the package ([d4f825e](https://github.com-personal/pravnviji/hello-world-npm/commit/d4f825ec3c51142d5acaca03b0d55dc6172aea4b))
+
 ## [2.0.2](https://github.com-personal/pravnviji/hello-world-npm/compare/v2.0.1...v2.0.2) (2025-05-14)
 
 
