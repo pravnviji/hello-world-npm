@@ -1,6 +1,6 @@
 {
     "branches": ["main"],
-    "repositoryUrl": "git@github.com-personal:pravnviji/hello-world-npm.git",
+    "repositoryUrl": "git@github.com:pravnviji/hello-world-npm.git",
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
