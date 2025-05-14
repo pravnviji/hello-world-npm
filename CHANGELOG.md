@@ -1,3 +1,22 @@
+# [2.0.0](https://github.com-personal/pravnviji/hello-world-npm/compare/v1.4.1...v2.0.0) (2025-05-14)
+
+
+### Bug Fixes
+
+* Fixes in Historical graph ([a0f5b76](https://github.com-personal/pravnviji/hello-world-npm/commit/a0f5b76fa32941fcf22bb00ca4fc12bf50bf899b))
+* Fixes in Historical graph v2 ([38d489e](https://github.com-personal/pravnviji/hello-world-npm/commit/38d489ea065a48c3adf9387383c5370fb09072aa))
+
+
+### Features
+
+* check the minor version ([a0c7bbf](https://github.com-personal/pravnviji/hello-world-npm/commit/a0c7bbf210ffe8c73bd044ece0940cb934d1fcc3))
+* refactor API ([fbffa6e](https://github.com-personal/pravnviji/hello-world-npm/commit/fbffa6e24448e14968989e2cc416b8ae597799ae))
+
+
+### BREAKING CHANGES
+
+* this affects all consumers
+
 ## [1.4.1](https://github.com-personal/pravnviji/hello-world-npm/compare/v1.4.0...v1.4.1) (2025-05-14)
 
 
