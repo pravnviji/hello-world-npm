@@ -1,3 +1,15 @@
+# [3.0.0](https://github.com/pravnviji/hello-world-npm/compare/v2.1.2...v3.0.0) (2025-05-14)
+
+
+### Features
+
+* refactor tokens ([75f6f25](https://github.com/pravnviji/hello-world-npm/commit/75f6f25bbb190bb56aac9e5e35c5d039026440b8))
+
+
+### BREAKING CHANGES
+
+* this affects all consumers
+
 ## [2.1.2](https://github.com/pravnviji/hello-world-npm/compare/v2.1.1...v2.1.2) (2025-05-14)
 
 
