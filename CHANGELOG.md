@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com-personal/pravnviji/hello-world-npm/compare/v1.2.1...v1.3.0) (2025-05-14)
+
+
+### Features
+
+* Updates console output message in index.js ([cc74049](https://github.com-personal/pravnviji/hello-world-npm/commit/cc740490f47b8354a157be004fed30f36b6ad0a3))
+
 ## [1.2.1](https://github.com-personal/pravnviji/hello-world-npm/compare/v1.2.0...v1.2.1) (2025-05-14)
 
 
