@@ -1,3 +1,3 @@
 #!/usr/bin/env node
 
-console.log("feat: Fixes in Feat fixes of the package");
+console.log("fix: Fixes in Fix fixes of the package");
