@@ -1,3 +1,3 @@
 #!/usr/bin/env node
 
-console.log("Testing! mock server!!!");
+console.log("Testing!! mock server!!!");
