@@ -1,3 +1,20 @@
+## [2.1.2](https://github.com/pravnviji/hello-world-npm/compare/v2.1.1...v2.1.2) (2025-05-14)
+
+
+### Bug Fixes
+
+* Add debug step for NPM_TOKEN and ensure correct usage in semantic-release ([d8b7138](https://github.com/pravnviji/hello-world-npm/commit/d8b71385267cbaa5185f1a102493f6b45fdc37bf))
+* Correct NPM_TOKEN reference in release workflow to use variable syntax ([f57a290](https://github.com/pravnviji/hello-world-npm/commit/f57a2908db38f52052fc84bcc22d614d65d23bcd))
+* Correct order of commands in release workflow for semantic-release ([2b3641c](https://github.com/pravnviji/hello-world-npm/commit/2b3641cee271d82eefec7dc70e7231a1edcb308c))
+* Improve clarity of GitHub Actions steps in release workflow ([db6f138](https://github.com/pravnviji/hello-world-npm/commit/db6f138e830aed6206bab88fb88cde4056d7b85d))
+* Testing github account ([8a1df73](https://github.com/pravnviji/hello-world-npm/commit/8a1df73061e0063ffeb58cf3eec4de790d6568b3))
+* Update console log message for clarity ([d87d25d](https://github.com/pravnviji/hello-world-npm/commit/d87d25dc213ec4b7809e9a2b401a32726b9fab3c))
+* Update debug step to mask NPM_TOKEN and correct secret reference in release workflow ([e12f9e6](https://github.com/pravnviji/hello-world-npm/commit/e12f9e67e45e13e3f21d2cf9432762931b9e040d))
+* Update GitHub Actions workflow to use GITHUB_TOKEN and npm ci ([7f133b2](https://github.com/pravnviji/hello-world-npm/commit/7f133b2a63ee97176bfa87ee61b1af3cb46e2e5e))
+* Update NPM_TOKEN reference in release workflow to use environment variable ([a4545a6](https://github.com/pravnviji/hello-world-npm/commit/a4545a6b7e457c8423c50515b39408745b8a03be))
+* Update NPM_TOKEN reference to use NODE_AUTH_TOKEN in release workflow ([e7ec2b0](https://github.com/pravnviji/hello-world-npm/commit/e7ec2b0d302a9996d1a22da98f9734091af5fd5c))
+* Update semantic-release command and NPM_TOKEN reference in workflow ([5318865](https://github.com/pravnviji/hello-world-npm/commit/531886548092800425eee3cd67d7f7df9458fbe1))
+
 ## [2.1.1](https://github.com-personal/pravnviji/hello-world-npm/compare/v2.1.0...v2.1.1) (2025-05-14)
 
 
