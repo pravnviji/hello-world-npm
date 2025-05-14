@@ -29,9 +29,9 @@ jobs:
         run: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > "$NPM_CONFIG_USERCONFIG"
 
       - name: Debug token
-        run: echo "NPMToken ---> ${NPM_TOKEN}" 
+        run: echo "NPMToken ---> ${NPM_TOKEN:0:4}***" 
         env:
-          NPM_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Install dependencies
         run: npm ci
