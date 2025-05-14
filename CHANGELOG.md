@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com-personal/pravnviji/hello-world-npm/compare/v1.4.0...v1.4.1) (2025-05-14)
+
+
+### Bug Fixes
+
+* bug fix ([022a058](https://github.com-personal/pravnviji/hello-world-npm/commit/022a0589af126ab4c10c3254173016e6368c7b4d))
+
 # [1.4.0](https://github.com-personal/pravnviji/hello-world-npm/compare/v1.3.0...v1.4.0) (2025-05-14)
 
 
