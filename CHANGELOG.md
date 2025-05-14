@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com-personal/pravnviji/hello-world-npm/compare/v1.2.0...v1.2.1) (2025-05-14)
+
+
+### Bug Fixes
+
+* update mock server message for clarity ([cd40826](https://github.com-personal/pravnviji/hello-world-npm/commit/cd408266f9c6ffedda3c9cc2b73628034fd8a863))
+
 # [1.2.0](https://github.com-personal/pravnviji/hello-world-npm/compare/v1.1.2...v1.2.0) (2025-05-14)
 
 
