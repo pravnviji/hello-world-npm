@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com-personal/pravnviji/hello-world-npm/compare/v1.0.0...v1.1.0) (2025-05-14)
+
+
+### Bug Fixes
+
+* update release workflow for semantic-release and improve greeting message in CLI tool ([547a526](https://github.com-personal/pravnviji/hello-world-npm/commit/547a52650d52e55d999a6a3b673c3af7b8770069))
+
+
+### Features
+
+* correct repository URL in release configuration ([1b01d55](https://github.com-personal/pravnviji/hello-world-npm/commit/1b01d55f190f6ca8252afb71802ae2c4488291fd))
+
 # 1.0.0 (2025-05-14)
 
 
