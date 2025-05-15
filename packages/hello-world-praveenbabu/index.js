@@ -1,3 +1,3 @@
 #!/usr/bin/env node
 
-console.log("Major changes: Testing the github the package");
+console.log("Breaking Changes: Testing the github the package");
