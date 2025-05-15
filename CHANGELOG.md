@@ -1,3 +1,10 @@
+# [4.1.0](https://github.com/pravnviji/hello-world-npm/compare/v4.0.0...v4.1.0) (2025-05-15)
+
+
+### Features
+
+* Minor restructuring ([cc7183d](https://github.com/pravnviji/hello-world-npm/commit/cc7183dceaf7123622637b8f4d346d3a2d31e172))
+
 # [4.0.0](https://github.com/pravnviji/hello-world-npm/compare/v3.0.0...v4.0.0) (2025-05-15)
 
 
