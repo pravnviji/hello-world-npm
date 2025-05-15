@@ -1,3 +1,15 @@
+# [4.0.0](https://github.com/pravnviji/hello-world-npm/compare/v3.0.0...v4.0.0) (2025-05-15)
+
+
+### Features
+
+* Compiliance ([7a850c0](https://github.com/pravnviji/hello-world-npm/commit/7a850c041cac4050be6244fd9cf0889c6c4d9b4d))
+
+
+### BREAKING CHANGES
+
+* v4.0 Compiliance issue addressed
+
 # [3.0.0](https://github.com/pravnviji/hello-world-npm/compare/v2.1.2...v3.0.0) (2025-05-14)
 
 
