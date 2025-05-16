@@ -1,3 +1,3 @@
 #!/usr/bin/env node
 
-console.log("Minor Restructure: Testing minor changes");
+console.log("BREAKING CHANGE: this affects all consumers");
