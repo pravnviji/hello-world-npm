@@ -1,3 +1,15 @@
+# [5.0.0](https://github.com/pravnviji/hello-world-npm/compare/v4.1.0...v5.0.0) (2025-05-16)
+
+
+### Features
+
+* refactor API ([5c5c3cf](https://github.com/pravnviji/hello-world-npm/commit/5c5c3cf44beeaaae8b1f7f35364421bb9f0193ff))
+
+
+### BREAKING CHANGES
+
+* this affects all consumers
+
 # [4.1.0](https://github.com/pravnviji/hello-world-npm/compare/v4.0.0...v4.1.0) (2025-05-15)
 
 
