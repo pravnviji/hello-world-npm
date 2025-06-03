@@ -1,3 +1,10 @@
+## [6.1.1](https://github.com/pravnviji/hello-world-npm/compare/v6.1.0...v6.1.1) (2025-06-03)
+
+
+### Bug Fixes
+
+* version update to 6.1.1 ([375248a](https://github.com/pravnviji/hello-world-npm/commit/375248a0dfaccc2b75666ba3709eff2588edde89))
+
 # [6.1.0](https://github.com/pravnviji/hello-world-npm/compare/v6.0.0...v6.1.0) (2025-06-03)
 
 
