@@ -1,3 +1,15 @@
+# [7.0.0](https://github.com/pravnviji/hello-world-npm/compare/v6.1.1...v7.0.0) (2025-06-03)
+
+
+### Features
+
+* refactor API ([a45b1d7](https://github.com/pravnviji/hello-world-npm/commit/a45b1d7f45bff5b6e24600c011c336acba7b14e9))
+
+
+### BREAKING CHANGES
+
+* version is upgraded to 7.0.0
+
 ## [6.1.1](https://github.com/pravnviji/hello-world-npm/compare/v6.1.0...v6.1.1) (2025-06-03)
 
 
