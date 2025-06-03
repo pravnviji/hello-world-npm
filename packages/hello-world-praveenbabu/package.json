@@ -4,11 +4,7 @@
   "description": "Simple CLI that says hello",
   "main": "index.js",
   "bin": {
-    "mycli": "./index.js",
-    "parser": "parser.cjs"
-  },
-  "scripts": {
-    "parser": "node parser.cjs"
+    "mycli": "./index.js"
   },
   "type": "module",
   "keywords": [
