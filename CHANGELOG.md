@@ -1,3 +1,10 @@
+# [6.1.0](https://github.com/pravnviji/hello-world-npm/compare/v6.0.0...v6.1.0) (2025-06-03)
+
+
+### Features
+
+* Minor restructuring ([8aaca3d](https://github.com/pravnviji/hello-world-npm/commit/8aaca3df86d06a5df3c3a3078d79a68646a36e62))
+
 # [6.0.0](https://github.com/pravnviji/hello-world-npm/compare/v5.0.0...v6.0.0) (2025-05-29)
 
 
